@@ -63,17 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Professional Balaji Group colors
-				balaji: {
-					'off-white': '#FAFAFA',
-					navy: '#1E293B',
-					'navy-light': '#334155',
-					'navy-dark': '#0F172A',
-					red: '#DC2626',
-					'red-light': '#EF4444',
-					'red-dark': '#B91C1C',
-					blue: '#2563EB',
-					gray: {
+				// Professional color scheme based on logo
+				brand: {
+					red: '#E53E3E',
+					blue: '#3182CE',
+					navy: '#1A365D',
+					slate: {
 						50: '#F8FAFC',
 						100: '#F1F5F9',
 						200: '#E2E8F0',
@@ -83,7 +78,7 @@ export default {
 						600: '#475569',
 						700: '#334155',
 						800: '#1E293B',
-						900: '#0F172A'
+						900: '#0F172A',
 					}
 				}
 			},
@@ -112,15 +107,26 @@ export default {
 				'fade-in': {
 					'0%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slide-up': {
+					'0%': { opacity: '0', transform: 'translateY(30px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.6s ease-out'
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-up': 'slide-up 0.6s ease-out'
 			},
 			fontFamily: {
-				'heading': ['Playfair Display', 'serif'],
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'heading': ['Poppins', 'system-ui', 'sans-serif'],
+			},
+			boxShadow: {
+				'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+				'medium': '0 4px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 20px -5px rgba(0, 0, 0, 0.04)',
+				'large': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
 			}
 		}
 	},

@@ -6,36 +6,41 @@ const Team = () => {
     {
       name: "DINESH GUPTA",
       position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: "/lovable-uploads/7ea35f6c-2e4d-4480-84c3-c9d06f1f3f15.png",
+      image: "/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png",
       joinYear: "2011",
       description: "Since becoming a partner in 2011, I have dedicated my efforts to enhancing the efficiency of our system. I firmly believe that with a robust system in place, we can excel at any given stage."
     },
     {
       name: "VIVEK AGARWAL", 
       position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: "/lovable-uploads/7ea35f6c-2e4d-4480-84c3-c9d06f1f3f15.png",
+      image: "/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png",
       joinYear: "2017",
       description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
     }
   ];
 
   return (
-    <section id="team" className="py-20 bg-balaji-gray-50 dark:bg-balaji-gray-800">
+    <section id="team" className="py-20 bg-gradient-to-br from-brand-slate-50 to-white dark:from-brand-slate-800 dark:to-brand-slate-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-heading font-bold text-balaji-navy dark:text-balaji-off-white mb-6">Our Team</h2>
-          <p className="text-xl text-balaji-gray-600 dark:text-balaji-gray-300 max-w-3xl mx-auto">
+          <div className="inline-flex items-center px-4 py-2 bg-brand-red/10 dark:bg-brand-red/20 rounded-full mb-6">
+            <span className="text-brand-red text-sm font-semibold tracking-wide">
+              Leadership Team
+            </span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-brand-navy dark:text-white mb-6">Our Team</h2>
+          <p className="text-xl text-brand-slate-600 dark:text-brand-slate-300 max-w-3xl mx-auto leading-relaxed">
             Meet the dedicated professionals driving innovation and excellence in packaging solutions
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
           {teamMembers.map((member, index) => (
             <div key={index} className="group">
-              <div className="bg-white dark:bg-balaji-navy rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="bg-white dark:bg-brand-slate-800 rounded-3xl p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
                 {/* Member Image */}
                 <div className="relative mb-8">
-                  <div className="w-48 h-48 mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-balaji-navy to-balaji-blue shadow-lg">
+                  <div className="w-56 h-56 mx-auto rounded-3xl overflow-hidden shadow-large">
                     <img 
                       src={member.image} 
                       alt={member.name}
@@ -43,7 +48,7 @@ const Team = () => {
                     />
                   </div>
                   <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-balaji-red rounded-full p-3 shadow-lg">
+                    <div className="bg-gradient-to-r from-brand-red to-brand-blue rounded-2xl p-3 shadow-medium">
                       <Briefcase className="w-6 h-6 text-white" />
                     </div>
                   </div>
@@ -51,40 +56,40 @@ const Team = () => {
 
                 {/* Member Info */}
                 <div className="text-center">
-                  <h3 className="text-2xl font-heading font-bold text-balaji-navy dark:text-balaji-off-white mb-2">
+                  <h3 className="text-2xl font-heading font-bold text-brand-navy dark:text-white mb-2">
                     {member.name}
                   </h3>
-                  <p className="text-balaji-red font-semibold mb-4">
+                  <p className="text-brand-red font-semibold mb-4 text-lg">
                     {member.position}
                   </p>
                   
-                  <div className="flex items-center justify-center text-balaji-blue mb-6">
+                  <div className="flex items-center justify-center text-brand-blue mb-6">
                     <Calendar className="w-4 h-4 mr-2" />
                     <span className="text-sm font-medium">Joined {member.joinYear}</span>
                   </div>
 
-                  <div className="w-16 h-1 bg-balaji-red mx-auto mb-6"></div>
+                  <div className="w-20 h-1 bg-gradient-to-r from-brand-red to-brand-blue mx-auto mb-6 rounded-full"></div>
                   
-                  <p className="text-balaji-gray-600 dark:text-balaji-gray-300 leading-relaxed text-sm">
+                  <p className="text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed">
                     {member.description}
                   </p>
                 </div>
 
                 {/* Decorative elements */}
-                <div className="absolute top-6 right-6 w-12 h-12 bg-balaji-red/10 rounded-full group-hover:bg-balaji-red/20 transition-colors"></div>
-                <div className="absolute bottom-6 left-6 w-8 h-8 bg-balaji-navy/10 rounded-lg group-hover:bg-balaji-navy/20 transition-colors"></div>
+                <div className="absolute top-6 right-6 w-16 h-16 bg-brand-red/5 rounded-2xl group-hover:bg-brand-red/10 transition-colors blur-sm"></div>
+                <div className="absolute bottom-6 left-6 w-12 h-12 bg-brand-blue/5 rounded-xl group-hover:bg-brand-blue/10 transition-colors blur-sm"></div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Leadership Message */}
-        <div className="mt-16 max-w-4xl mx-auto">
-          <div className="bg-white dark:bg-balaji-navy rounded-2xl p-8 shadow-lg text-center">
-            <h3 className="text-2xl font-heading font-bold text-balaji-navy dark:text-balaji-off-white mb-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-white to-brand-slate-50 dark:from-brand-slate-800 dark:to-brand-slate-700 rounded-3xl p-10 shadow-large text-center">
+            <h3 className="text-3xl font-heading font-bold text-brand-navy dark:text-white mb-6">
               Leadership Philosophy
             </h3>
-            <p className="text-lg text-balaji-gray-600 dark:text-balaji-gray-300 leading-relaxed">
+            <p className="text-lg text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed">
               Our leadership team brings together decades of experience in packaging innovation, 
               operational excellence, and customer service. We believe in empowering our team 
               to deliver solutions that exceed expectations while maintaining the highest quality standards.
