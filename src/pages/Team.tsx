@@ -1,10 +1,10 @@
 
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import Team from '@/components/Team';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const TeamPage = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -31,12 +31,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main>
-        <Hero />
+      <main className="pt-20">
+        <Team />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default TeamPage;

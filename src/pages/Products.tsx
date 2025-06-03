@@ -1,10 +1,10 @@
 
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import ProductGallery from '@/components/ProductGallery';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const Products = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -31,12 +31,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <main>
-        <Hero />
+      <main className="pt-20">
+        <ProductGallery />
       </main>
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Products;

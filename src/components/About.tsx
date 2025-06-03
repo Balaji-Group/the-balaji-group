@@ -3,19 +3,19 @@ import { Target, Eye, Users, Globe, Award, Clock } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white dark:bg-brand-slate-900">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-brand-red/10 dark:bg-brand-red/20 rounded-full mb-6">
-            <span className="text-brand-red text-sm font-semibold tracking-wide">
+          <div className="inline-flex items-center px-4 py-2 bg-accent/10 dark:bg-accent/20 rounded-full mb-6">
+            <span className="text-accent text-sm font-semibold tracking-wide">
               Our Story
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-brand-navy dark:text-white mb-6">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             About Balaji Group
           </h2>
-          <p className="text-xl text-brand-slate-600 dark:text-brand-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A house of professionals dealing in paper and paper products with over 2 decades of experience
           </p>
         </div>
@@ -26,12 +26,12 @@ const About = () => {
             {/* Vision */}
             <div>
               <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-brand-red to-brand-red/80 rounded-2xl flex items-center justify-center mr-4 shadow-medium">
+                <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center mr-4 shadow-medium">
                   <Eye className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-brand-navy dark:text-white">Vision</h3>
+                <h3 className="text-2xl font-heading font-bold text-primary">Vision</h3>
               </div>
-              <p className="text-lg text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed pl-18">
+              <p className="text-lg text-muted-foreground leading-relaxed pl-18">
                 To create a seamless ecosystem and be a one-stop solution for all your kraft paper needs. 
                 Our vision is to be the go-to partner for businesses seeking reliable kraft paper solutions.
               </p>
@@ -40,12 +40,12 @@ const About = () => {
             {/* Mission */}
             <div>
               <div className="flex items-center mb-6">
-                <div className="w-14 h-14 bg-gradient-to-br from-brand-blue to-brand-navy rounded-2xl flex items-center justify-center mr-4 shadow-medium">
+                <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mr-4 shadow-medium">
                   <Target className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-heading font-bold text-brand-navy dark:text-white">Mission</h3>
+                <h3 className="text-2xl font-heading font-bold text-primary">Mission</h3>
               </div>
-              <p className="text-lg text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed pl-18">
+              <p className="text-lg text-muted-foreground leading-relaxed pl-18">
                 To be the leading provider of high-quality kraft paper, connecting mill owners, distributors, 
                 and end-users across industries. We strive to deliver sustainable solutions that enhance 
                 packaging, printing, and other applications.
@@ -55,8 +55,8 @@ const About = () => {
 
           {/* Right side - Founder */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-brand-slate-50 to-white dark:from-brand-slate-800 dark:to-brand-slate-700 rounded-3xl p-8 shadow-large">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-brand-red/10 to-transparent rounded-full blur-2xl"></div>
+            <div className="bg-gradient-to-br from-secondary to-card rounded-3xl p-8 shadow-large">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent/10 to-transparent rounded-full blur-2xl"></div>
               <div className="relative z-10">
                 <div className="w-56 h-56 mx-auto mb-8 rounded-3xl overflow-hidden shadow-large">
                   <img 
@@ -66,10 +66,10 @@ const About = () => {
                   />
                 </div>
                 <div className="text-center">
-                  <h3 className="text-2xl font-heading font-bold text-brand-navy dark:text-white mb-2">SUMIT GOEL</h3>
-                  <p className="text-brand-red font-semibold mb-6 text-lg">Founding Director</p>
-                  <div className="w-20 h-1 bg-gradient-to-r from-brand-red to-brand-blue mx-auto mb-6 rounded-full"></div>
-                  <p className="text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed">
+                  <h3 className="text-2xl font-heading font-bold text-primary mb-2">SUMIT GOEL</h3>
+                  <p className="text-accent font-semibold mb-6 text-lg">Founding Director</p>
+                  <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6 rounded-full"></div>
+                  <p className="text-muted-foreground leading-relaxed">
                     Leading Balaji Group with a vision to revolutionize the packaging industry through 
                     innovation, quality, and customer-centric solutions.
                   </p>
@@ -80,36 +80,36 @@ const About = () => {
         </div>
 
         {/* Company Overview */}
-        <div className="bg-gradient-to-r from-brand-slate-50 to-white dark:from-brand-slate-800 dark:to-brand-slate-700 rounded-3xl p-10 mb-16 shadow-large">
-          <h3 className="text-3xl font-heading font-bold text-brand-navy dark:text-white mb-8 text-center">
+        <div className="bg-gradient-to-r from-secondary to-card rounded-3xl p-10 mb-16 shadow-large">
+          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
             Company Overview
           </h3>
           <div className="grid md:grid-cols-2 gap-10">
             <div>
-              <p className="text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed mb-6">
-                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-brand-navy dark:text-white">Kraft paper and Duplex Board</strong>. 
-                With a legacy spanning over <strong className="text-brand-navy dark:text-white">two decades</strong>, the company has become a prominent player in the Kraft paper 
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
+                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
                 trading industry, recognized for its quality products and dependable service.
               </p>
-              <p className="text-brand-slate-600 dark:text-brand-slate-300 leading-relaxed">
-                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-brand-navy dark:text-white">Rajasthan, Western Uttar Pradesh (UP), 
+              <p className="text-muted-foreground leading-relaxed">
+                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
                 Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
                 distribution network and a dedication to meeting the diverse needs of businesses across these regions.
               </p>
             </div>
             <div>
-              <h4 className="text-xl font-heading font-semibold text-brand-navy dark:text-white mb-6">Our Product Profile:</h4>
-              <ul className="space-y-3 text-brand-slate-600 dark:text-brand-slate-300">
+              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
+              <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-brand-red to-brand-blue rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-primary rounded-full mr-4"></div>
                   Kraft paper & Duplex board
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-brand-red to-brand-blue rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-primary rounded-full mr-4"></div>
                   Corrugated rolls, sheets and boxes
                 </li>
                 <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-brand-red to-brand-blue rounded-full mr-4"></div>
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-primary rounded-full mr-4"></div>
                   Duplex/E-flute mono cartons
                 </li>
               </ul>
@@ -119,33 +119,33 @@ const About = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white dark:bg-brand-slate-800 rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
-            <div className="w-12 h-12 bg-brand-red/10 dark:bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <Users className="w-6 h-6 text-brand-red" />
+          <div className="bg-card rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Users className="w-6 h-6 text-accent" />
             </div>
-            <div className="text-3xl font-bold text-brand-navy dark:text-white mb-2">1000+</div>
-            <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400 font-medium">Happy Clients</div>
+            <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-sm text-muted-foreground font-medium">Happy Clients</div>
           </div>
-          <div className="bg-white dark:bg-brand-slate-800 rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
-            <div className="w-12 h-12 bg-brand-blue/10 dark:bg-brand-blue/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <Globe className="w-6 h-6 text-brand-blue" />
+          <div className="bg-card rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Globe className="w-6 h-6 text-primary" />
             </div>
-            <div className="text-3xl font-bold text-brand-navy dark:text-white mb-2">5</div>
-            <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400 font-medium">States Coverage</div>
+            <div className="text-3xl font-bold text-primary mb-2">5</div>
+            <div className="text-sm text-muted-foreground font-medium">States Coverage</div>
           </div>
-          <div className="bg-white dark:bg-brand-slate-800 rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
-            <div className="w-12 h-12 bg-brand-red/10 dark:bg-brand-red/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <Award className="w-6 h-6 text-brand-red" />
+          <div className="bg-card rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-accent/10 dark:bg-accent/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Award className="w-6 h-6 text-accent" />
             </div>
-            <div className="text-3xl font-bold text-brand-navy dark:text-white mb-2">22+</div>
-            <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400 font-medium">Years Experience</div>
+            <div className="text-3xl font-bold text-primary mb-2">22+</div>
+            <div className="text-sm text-muted-foreground font-medium">Years Experience</div>
           </div>
-          <div className="bg-white dark:bg-brand-slate-800 rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
-            <div className="w-12 h-12 bg-brand-blue/10 dark:bg-brand-blue/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <Clock className="w-6 h-6 text-brand-blue" />
+          <div className="bg-card rounded-2xl p-6 shadow-medium text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Clock className="w-6 h-6 text-primary" />
             </div>
-            <div className="text-3xl font-bold text-brand-navy dark:text-white mb-2">24/7</div>
-            <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400 font-medium">Customer Support</div>
+            <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-sm text-muted-foreground font-medium">Customer Support</div>
           </div>
         </div>
       </div>

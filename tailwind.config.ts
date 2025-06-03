@@ -53,22 +53,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Professional color scheme based on logo
+				// Brand colors matching new scheme
 				brand: {
-					red: '#E53E3E',
-					blue: '#3182CE',
-					navy: '#1A365D',
-					slate: {
+					'off-white': '#FAF9F6',
+					'navy': '#1E293B',
+					'red': '#B91C1C',
+					'cream': '#F3F0ED',
+					'slate': {
 						50: '#F8FAFC',
 						100: '#F1F5F9',
 						200: '#E2E8F0',

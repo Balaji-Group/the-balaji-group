@@ -6,65 +6,65 @@
 
 @layer base {
   :root {
-    --background: 255 255 255;
-    --foreground: 15 23 42;
+    --background: 250 249 246;
+    --foreground: 30 41 59;
 
     --card: 255 255 255;
-    --card-foreground: 15 23 42;
+    --card-foreground: 30 41 59;
 
     --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
+    --popover-foreground: 30 41 59;
 
-    --primary: 26 54 93;
-    --primary-foreground: 248 250 252;
+    --primary: 30 41 59;
+    --primary-foreground: 250 249 246;
 
-    --secondary: 241 245 249;
-    --secondary-foreground: 15 23 42;
+    --secondary: 248 246 243;
+    --secondary-foreground: 30 41 59;
 
-    --muted: 248 250 252;
+    --muted: 243 240 237;
     --muted-foreground: 100 116 139;
 
-    --accent: 229 62 62;
+    --accent: 185 28 28;
     --accent-foreground: 255 255 255;
 
-    --destructive: 239 68 68;
+    --destructive: 185 28 28;
     --destructive-foreground: 255 255 255;
 
     --border: 226 232 240;
     --input: 226 232 240;
-    --ring: 26 54 93;
+    --ring: 30 41 59;
 
     --radius: 0.75rem;
   }
 
   .dark {
     --background: 15 23 42;
-    --foreground: 248 250 252;
+    --foreground: 250 249 246;
 
     --card: 30 41 59;
-    --card-foreground: 248 250 252;
+    --card-foreground: 250 249 246;
 
     --popover: 30 41 59;
-    --popover-foreground: 248 250 252;
+    --popover-foreground: 250 249 246;
 
-    --primary: 248 250 252;
+    --primary: 250 249 246;
     --primary-foreground: 15 23 42;
 
     --secondary: 51 65 85;
-    --secondary-foreground: 248 250 252;
+    --secondary-foreground: 250 249 246;
 
     --muted: 51 65 85;
     --muted-foreground: 148 163 184;
 
-    --accent: 229 62 62;
+    --accent: 185 28 28;
     --accent-foreground: 255 255 255;
 
-    --destructive: 239 68 68;
+    --destructive: 185 28 28;
     --destructive-foreground: 255 255 255;
 
     --border: 51 65 85;
     --input: 51 65 85;
-    --ring: 248 250 252;
+    --ring: 250 249 246;
   }
 }
 
@@ -85,7 +85,7 @@
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #faf9f6 0%, #f3f0ed 100%);
   }
 
   .gradient-bg-dark {
