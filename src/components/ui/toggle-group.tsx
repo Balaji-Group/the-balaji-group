@@ -1,3 +1,5 @@
+// If ToggleGroup is not used anywhere, this file can be deleted. Otherwise, keep only necessary imports and code.
+
 import * as React from "react"
 import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group"
 import { type VariantProps } from "class-variance-authority"

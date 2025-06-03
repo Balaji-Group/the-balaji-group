@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -15,7 +14,7 @@ const Contact = () => {
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Contact Us</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-off-white max-w-3xl mx-auto">
             Ready to discuss your packaging needs? Get in touch with our team today
           </p>
         </div>
@@ -32,7 +31,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-2">Phone</h4>
-                  <p className="text-muted-foreground">+91 9829069467</p>
+                  <p className="text-off-white">+91 9829069467</p>
                 </div>
               </div>
 
@@ -42,7 +41,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-2">Email</h4>
-                  <p className="text-muted-foreground">sumit@thebalajigroup.in</p>
+                  <p className="text-off-white">sumit@thebalajigroup.in</p>
                 </div>
               </div>
 
@@ -52,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-2">Address</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-off-white">
                     B1/2b, C-block, SDC Gateway,<br />
                     Bani Park, Jaipur, Rajasthan - 302016
                   </p>
@@ -65,7 +64,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-2">Business Hours</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-off-white">
                     Monday - Saturday: 9:00 AM - 6:00 PM<br />
                     Sunday: Closed
                   </p>
@@ -75,20 +74,20 @@ const Contact = () => {
 
             {/* Quick Stats */}
             <div className="mt-12 grid grid-cols-2 gap-6">
-              <div className="bg-secondary rounded-xl p-6 text-center">
+              <div className="bg-background rounded-xl p-6 text-center">
                 <div className="text-2xl font-bold text-accent mb-1">24/7</div>
-                <div className="text-sm text-muted-foreground">Support Available</div>
+                <div className="text-sm text-off-white">Support Available</div>
               </div>
-              <div className="bg-secondary rounded-xl p-6 text-center">
+              <div className="bg-background rounded-xl p-6 text-center">
                 <div className="text-2xl font-bold text-accent mb-1">{"< 24hrs"}</div>
-                <div className="text-sm text-muted-foreground">Response Time</div>
+                <div className="text-sm text-off-white">Response Time</div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div>
-            <div className="bg-secondary rounded-2xl p-8 shadow-lg">
+            <div className="bg-background rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-heading font-bold text-primary mb-6">Send us a Message</h3>
               
               <form className="space-y-6">

@@ -1,4 +1,3 @@
-
 import { Package, Box, Layers, Archive, Grid, Wrench, Shield, Truck } from 'lucide-react';
 
 const ProductGallery = () => {
@@ -127,10 +126,10 @@ const ProductGallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="section fade-in bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeIn">
           <div className="inline-flex items-center px-4 py-2 bg-accent/10 dark:bg-accent/20 rounded-full mb-6">
             <span className="text-accent text-sm font-semibold tracking-wide">
               Our Products
@@ -145,9 +144,9 @@ const ProductGallery = () => {
         </div>
 
         {/* Product Categories with Images */}
-        <div className="space-y-20 mb-20">
+        <div className="space-y-20 mb-20 animate-slideUp">
           {productCategories.map((category, index) => (
-            <div key={index} className="bg-card rounded-3xl p-8 shadow-large">
+            <div key={index} className="card p-8 card-vibrant pop-in">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center text-white mr-6">
                   {category.icon}
@@ -165,7 +164,7 @@ const ProductGallery = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {category.images.map((image, imgIndex) => (
                   <div key={imgIndex} className="group">
-                    <div className="bg-brand-off-white dark:bg-brand-slate-800 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="card p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                       <div className="aspect-square mb-4 rounded-xl overflow-hidden bg-white">
                         <img 
                           src={image.src}
@@ -185,14 +184,14 @@ const ProductGallery = () => {
         </div>
 
         {/* All Solutions Grid */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-heading font-bold text-center text-primary mb-12">
+        <div className="mb-20 animate-fadeIn">
+          <h2 className="text-3xl font-heading font-bold text-center text-primary mb-12 pop-in">
             Complete Product Range
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {allSolutions.map((solution, index) => (
               <div key={index} className="group">
-                <div className="bg-card rounded-2xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+                <div className="card p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
                   <div className="w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
                     {solution.icon}
                   </div>
@@ -211,13 +210,13 @@ const ProductGallery = () => {
         </div>
 
         {/* Industries Served */}
-        <div className="bg-secondary rounded-3xl p-8 mb-20">
+        <div className="bg-background rounded-3xl p-8 mb-20 card animate-fadeIn glass-heavy">
           <h2 className="text-3xl font-heading font-bold text-center text-primary mb-12">
             Industries We Serve
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {industries.map((industry, index) => (
-              <div key={index} className="bg-card rounded-xl p-4 shadow-medium hover:shadow-large transition-shadow text-center">
+              <div key={index} className="card p-4 shadow-medium hover:shadow-large transition-shadow text-center card-vibrant pop-in">
                 <p className="text-sm font-medium text-primary">{industry}</p>
               </div>
             ))}
@@ -225,8 +224,8 @@ const ProductGallery = () => {
         </div>
 
         {/* Role in Packaging */}
-        <div className="bg-card rounded-3xl p-10 shadow-large">
-          <h2 className="text-3xl font-heading font-bold text-primary mb-6 text-center">
+        <div className="bg-card rounded-3xl p-10 shadow-large card animate-fadeIn glass-heavy">
+          <h2 className="text-3xl font-heading font-bold text-primary mb-6 text-center pop-in">
             Our Role In Packaging
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-4xl mx-auto">

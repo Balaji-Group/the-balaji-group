@@ -1,3 +1,5 @@
+// If Switch is not used anywhere, this file can be deleted. Otherwise, keep only necessary imports and code.
+
 import * as React from "react"
 import * as SwitchPrimitives from "@radix-ui/react-switch"
 

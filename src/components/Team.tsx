@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar } from 'lucide-react';
 
 const Team = () => {
@@ -20,9 +19,9 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-gradient-to-br from-secondary to-background">
+    <section id="team" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeIn">
           <div className="inline-flex items-center px-4 py-2 bg-accent/10 dark:bg-accent/20 rounded-full mb-6">
             <span className="text-accent text-sm font-semibold tracking-wide">
               Leadership Team
@@ -34,10 +33,10 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16 animate-slideUp">
           {teamMembers.map((member, index) => (
             <div key={index} className="group">
-              <div className="bg-card rounded-3xl p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="card p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
                 {/* Member Image */}
                 <div className="relative mb-8">
                   <div className="w-56 h-56 mx-auto rounded-3xl overflow-hidden shadow-large">
@@ -84,8 +83,8 @@ const Team = () => {
         </div>
 
         {/* Leadership Message */}
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-card to-secondary rounded-3xl p-10 shadow-large text-center">
+        <div className="max-w-4xl mx-auto animate-fadeIn">
+          <div className="bg-background rounded-3xl p-10 shadow-large card text-center">
             <h3 className="text-3xl font-heading font-bold text-primary mb-6">
               Leadership Philosophy
             </h3>
