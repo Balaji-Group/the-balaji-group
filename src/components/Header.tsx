@@ -34,16 +34,16 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
           <Link to="/" className="flex items-center space-x-4">
             <div className="relative">
               <img 
-                src="/lovable-uploads/eafac406-5a59-4aba-bfec-30b38401b8e7.png" 
+                src="/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png" 
                 alt="Balaji Group Logo" 
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <div className="hidden sm:block">
-              <h1 className="text-xl font-heading font-bold text-brand-navy dark:text-brand-off-white tracking-tight">
+              <h1 className="text-2xl font-heading font-bold text-brand-navy dark:text-brand-off-white tracking-tight">
                 BALAJI GROUP
               </h1>
-              <p className="text-xs text-brand-red font-medium tracking-wide">
+              <p className="text-sm text-brand-red font-medium tracking-wide">
                 A Complete House of Packaging
               </p>
             </div>
