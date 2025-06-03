@@ -1,131 +1,77 @@
-
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Package, Shield, Award, Users } from 'lucide-react';
+import { ArrowRight, Package, Shield, Award, Users, Star, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center gradient-bg dark:gradient-bg-dark overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 dotted-pattern"></div>
-      
-      {/* Gradient Overlays - using only approved colors */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-brand-red/20 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-brand-navy/20 to-transparent rounded-full blur-3xl"></div>
-      
-      <div className="container mx-auto px-4 py-20 relative z-10">
+    <section id="home" className="relative min-h-screen flex items-center bg-background overflow-hidden">
+      <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="animate-fade-in">
-            <div className="inline-flex items-center px-4 py-2 bg-brand-red/10 dark:bg-brand-red/20 rounded-full mb-6">
-              <span className="text-brand-red text-sm font-semibold tracking-wide">
-                Since 2002 • Industry Leader
-              </span>
+          {/* Left Column - Text Content */}
+          <div className="space-y-10 fade-in">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-white drop-shadow-xl animate-fadeIn pop-in"
+                  style={{ textShadow: '0 4px 24px rgba(0,0,0,0.35), 0 1px 0 #222' }}>
+                <span className="rainbow">Complete</span> <span className="text-accent">Packaging</span> <span className="text-secondary">Solutions</span>
+              </h1>
+              <p className="text-2xl font-bold text-white animate-slideUp pop-in"
+                 style={{ textShadow: '0 2px 12px rgba(0,0,0,0.25), 0 1px 0 #222' }}>
+                Your trusted partner in <span className="text-accent">innovative</span> packaging since <span className="text-secondary">2002</span>
+              </p>
             </div>
-            
-            <h1 className="text-5xl lg:text-7xl font-heading font-bold text-brand-navy dark:text-brand-off-white mb-6 leading-tight">
-              Balaji <span className="text-brand-red">Group</span>
-            </h1>
-            
-            <p className="text-2xl lg:text-3xl text-brand-slate-600 dark:text-brand-slate-300 font-medium mb-6 tracking-wide">
-              A Complete House of <span className="text-brand-navy dark:text-brand-off-white font-semibold">Packaging</span>
-            </p>
-            
-            <p className="text-lg text-brand-slate-500 dark:text-brand-slate-400 mb-10 max-w-xl leading-relaxed">
-              Delivering innovative packaging solutions across India and beyond. From corrugated boxes to specialized packaging, 
-              we craft quality that elevates your brand.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link to="/products">
-                <Button 
-                  size="lg" 
-                  className="bg-brand-red hover:bg-brand-red/90 text-white font-semibold shadow-medium hover:shadow-large transition-all"
-                >
-                  Explore Products <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white transition-all"
-                >
-                  Contact Us
-                </Button>
-              </Link>
+            <div className="flex flex-wrap gap-6 pt-2 animate-fadeIn">
+              <Button asChild size="lg" className="btn-gradient flex items-center gap-2 text-lg shadow-glow">
+                <Link to="/products">
+                  Explore Products <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="btn-gradient flex items-center gap-2 text-lg shadow-red border-2 border-accent">
+                <Link to="/contact">Contact Us</Link>
+              </Button>
             </div>
-
-            {/* Key Stats */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-red/10 dark:bg-brand-red/20 rounded-xl flex items-center justify-center">
-                    <Package className="w-6 h-6 text-brand-red" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-brand-navy dark:text-brand-off-white">22+</div>
-                <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400">Years Experience</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 animate-slideUp">
+              <div className="flex items-center gap-3 card-vibrant p-3 pop-in">
+                <Package className="h-7 w-7 text-accent" />
+                <span className="text-base font-bold text-off-white">Quality</span>
               </div>
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-navy/10 dark:bg-brand-navy/20 rounded-xl flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-brand-navy dark:text-brand-off-white" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-brand-navy dark:text-brand-off-white">ISO</div>
-                <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400">Certified</div>
+              <div className="flex items-center gap-3 card-vibrant p-3 pop-in">
+                <Shield className="h-7 w-7 text-secondary" />
+                <span className="text-base font-bold text-off-white">Reliable</span>
               </div>
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-red/10 dark:bg-brand-red/20 rounded-xl flex items-center justify-center">
-                    <Award className="w-6 h-6 text-brand-red" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-brand-navy dark:text-brand-off-white">5</div>
-                <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400">Business Units</div>
+              <div className="flex items-center gap-3 card-vibrant p-3 pop-in">
+                <Award className="h-7 w-7 text-accent" />
+                <span className="text-base font-bold text-off-white">Expert Team</span>
               </div>
-              <div className="text-center">
-                <div className="flex justify-center mb-3">
-                  <div className="w-12 h-12 bg-brand-navy/10 dark:bg-brand-navy/20 rounded-xl flex items-center justify-center">
-                    <Users className="w-6 h-6 text-brand-navy dark:text-brand-off-white" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-brand-navy dark:text-brand-off-white">1000+</div>
-                <div className="text-sm text-brand-slate-500 dark:text-brand-slate-400">Happy Clients</div>
+              <div className="flex items-center gap-3 card-vibrant p-3 pop-in">
+                <Users className="h-7 w-7 text-secondary" />
+                <span className="text-base font-bold text-off-white">Customer Focus</span>
               </div>
             </div>
           </div>
-
-          {/* Right side with enhanced logo display */}
-          <div className="relative flex items-center justify-center lg:justify-end animate-slide-up">
-            <div className="relative">
-              {/* Background elements - using only approved colors */}
-              <div className="absolute inset-0 bg-gradient-to-br from-brand-red/5 via-brand-navy/5 to-brand-navy/5 rounded-3xl blur-3xl scale-110"></div>
-              
-              {/* Main logo container */}
-              <div className="relative z-10 glass-effect dark:glass-effect-dark rounded-3xl p-12 shadow-large">
-                <div className="text-center">
-                  <div className="mb-8">
-                    <img 
-                      src="/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png" 
-                      alt="Balaji Group Logo" 
-                      className="h-40 w-auto mx-auto filter drop-shadow-lg"
-                    />
-                  </div>
-                  <h3 className="text-3xl font-heading font-bold text-brand-navy dark:text-brand-off-white mb-2 tracking-wide">
-                    BALAJI GROUP
-                  </h3>
-                  <p className="text-brand-red font-semibold text-lg tracking-wide">
-                    Complete Packaging Solutions
-                  </p>
-                </div>
+          {/* Right Column - Logo Card */}
+          <div className="relative animate-slideInRight">
+            {/* Background elements */}
+            <div className="absolute inset-0 bg-gradient-to-br from-accent/20 via-secondary/20 to-primary/20 rounded-3xl blur-3xl scale-110"></div>
+            {/* Main logo container */}
+            <div className="relative z-10 glass-heavy rounded-3xl p-14 shadow-large flex flex-col items-center pop-in">
+              <div className="mb-8">
+                <img 
+                  src="/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png" 
+                  alt="Balaji Group Logo" 
+                  className="h-44 w-auto mx-auto filter drop-shadow-xl animate-bounce"
+                />
               </div>
-
-              {/* Floating decorative elements - using only approved colors */}
-              <div className="absolute -top-6 -right-6 w-16 h-16 bg-brand-red/20 rounded-2xl rotate-12 blur-sm"></div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-brand-navy/20 rounded-xl rotate-45 blur-sm"></div>
-              <div className="absolute top-1/2 -left-8 w-8 h-8 bg-brand-red/30 rounded-full blur-sm"></div>
+              <h3 className="text-4xl font-heading font-extrabold text-white mb-2 tracking-wide animate-fadeIn">
+                BALAJI GROUP
+              </h3>
+              <p className="text-accent font-semibold text-xl tracking-wide animate-slideUp">
+                A Complete House of Packaging
+              </p>
             </div>
+            {/* Floating decorative elements */}
+            <div className="absolute -top-8 -right-8 w-20 h-20 bg-accent/30 rounded-2xl rotate-12 blur-lg animate-pulse"></div>
+            <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-secondary/30 rounded-xl rotate-45 blur-lg animate-pulse"></div>
+            <div className="absolute top-1/2 -left-10 w-10 h-10 bg-accent/40 rounded-full blur-lg animate-pulse"></div>
           </div>
         </div>
       </div>

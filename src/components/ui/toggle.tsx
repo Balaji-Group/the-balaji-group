@@ -1,3 +1,5 @@
+// If Toggle is not used anywhere, this file can be deleted. Otherwise, keep only necessary imports and code.
+
 import * as React from "react"
 import * as TogglePrimitive from "@radix-ui/react-toggle"
 import { cva, type VariantProps } from "class-variance-authority"

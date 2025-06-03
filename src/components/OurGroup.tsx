@@ -1,4 +1,3 @@
-
 import { Calendar, MapPin, Factory, Truck } from 'lucide-react';
 
 const OurGroup = () => {
@@ -41,24 +40,24 @@ const OurGroup = () => {
   ];
 
   return (
-    <section id="group" className="py-20 bg-secondary">
+    <section id="group" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fadeIn">
           <div className="inline-flex items-center px-4 py-2 bg-accent/10 dark:bg-accent/20 rounded-full mb-6">
             <span className="text-accent text-sm font-semibold tracking-wide">
               Our Companies
             </span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Our Group</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-off-white max-w-3xl mx-auto">
             A diversified portfolio of companies working together to deliver comprehensive packaging solutions
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slideUp">
           {companies.map((company, index) => (
             <div key={index} className="group relative">
-              <div className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 h-full">
+              <div className="card p-8 h-full">
                 {/* Icon and established year */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white group-hover:bg-accent transition-colors">
@@ -76,13 +75,13 @@ const OurGroup = () => {
                 </h3>
 
                 {/* Location */}
-                <div className="flex items-center text-muted-foreground mb-4">
+                <div className="flex items-center text-off-white mb-4">
                   <MapPin className="w-4 h-4 mr-2" />
                   <span className="text-sm">{company.location}</span>
                 </div>
 
                 {/* Description */}
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-off-white text-sm leading-relaxed">
                   {company.description}
                 </p>
 
@@ -94,12 +93,12 @@ const OurGroup = () => {
         </div>
 
         {/* Bottom highlight */}
-        <div className="mt-16 text-center">
-          <div className="bg-card rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
+        <div className="mt-16 text-center animate-fadeIn">
+          <div className="card p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-heading font-bold text-primary mb-4">
               Combined Excellence
             </h3>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-off-white">
               Together, our group companies represent decades of expertise, cutting-edge technology, 
               and unwavering commitment to quality in the packaging industry.
             </p>
