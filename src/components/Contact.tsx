@@ -75,7 +75,7 @@ const Contact = () => {
                 <div className="text-sm text-muted-foreground">Support Available</div>
               </div>
               <div className="bg-balaji-beige dark:bg-gray-800 rounded-xl p-6 text-center">
-                <div className="text-2xl font-bold text-balaji-brown mb-1">< 24hrs</div>
+                <div className="text-2xl font-bold text-balaji-brown mb-1">{"< 24hrs"}</div>
                 <div className="text-sm text-muted-foreground">Response Time</div>
               </div>
             </div>
