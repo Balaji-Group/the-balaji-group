@@ -21,7 +21,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-balaji-navy/95 backdrop-blur-sm border-b border-balaji-gray-200 dark:border-balaji-gray-700">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -32,7 +32,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               </div>
             </div>
             <div>
-              <h1 className="text-xl font-heading font-bold text-foreground">BALAJI GROUP</h1>
+              <h1 className="text-xl font-heading font-bold text-balaji-navy dark:text-balaji-off-white">BALAJI GROUP</h1>
               <p className="text-xs text-balaji-red font-medium">A Complete House of Packaging</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-balaji-brown transition-colors font-medium"
+                className="text-balaji-navy dark:text-balaji-off-white hover:text-balaji-red transition-colors font-medium"
               >
                 {item.name}
               </a>
@@ -56,7 +56,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               variant="outline"
               size="icon"
               onClick={toggleDarkMode}
-              className="border-balaji-gold hover:bg-balaji-gold hover:text-white"
+              className="border-balaji-gray-300 dark:border-balaji-gray-600 hover:bg-balaji-red hover:text-white hover:border-balaji-red"
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </Button>
@@ -66,7 +66,7 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
               variant="outline"
               size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden border-balaji-gold hover:bg-balaji-gold hover:text-white"
+              className="md:hidden border-balaji-gray-300 dark:border-balaji-gray-600 hover:bg-balaji-red hover:text-white hover:border-balaji-red"
             >
               {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </Button>
@@ -75,13 +75,13 @@ const Header = ({ darkMode, toggleDarkMode }: HeaderProps) => {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-balaji-gray-200 dark:border-balaji-gray-700 pt-4">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-balaji-brown transition-colors font-medium py-2"
+                  className="text-balaji-navy dark:text-balaji-off-white hover:text-balaji-red transition-colors font-medium py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

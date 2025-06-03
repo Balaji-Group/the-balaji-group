@@ -63,16 +63,28 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom Balaji Group colors
+				// Professional Balaji Group colors
 				balaji: {
-					beige: '#F5F1E8',
-					'beige-dark': '#EDE6D3',
-					brown: '#B8860B',
-					'brown-dark': '#8B6914',
-					'brown-light': '#DAA520',
+					'off-white': '#FAFAFA',
+					navy: '#1E293B',
+					'navy-light': '#334155',
+					'navy-dark': '#0F172A',
 					red: '#DC2626',
+					'red-light': '#EF4444',
+					'red-dark': '#B91C1C',
 					blue: '#2563EB',
-					gold: '#D4A574'
+					gray: {
+						50: '#F8FAFC',
+						100: '#F1F5F9',
+						200: '#E2E8F0',
+						300: '#CBD5E1',
+						400: '#94A3B8',
+						500: '#64748B',
+						600: '#475569',
+						700: '#334155',
+						800: '#1E293B',
+						900: '#0F172A'
+					}
 				}
 			},
 			borderRadius: {
