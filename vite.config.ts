@@ -27,25 +27,15 @@ export default defineConfig(({ mode }) => ({
     sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      onwarn(warning, warn) {
-        // Skip all TypeScript warnings during build
-        if (warning.code === 'PLUGIN_WARNING' || warning.message?.includes('TypeScript')) {
-          return;
-        }
-        warn(warning);
-      }
-    }
   },
   esbuild: {
+    // Use esbuild for TypeScript compilation to avoid tsconfig issues
+    target: 'es2020',
     logOverride: { 
-      'this-is-undefined-in-esm': 'silent',
-      'direct-eval': 'silent'
-    },
-    // Use esbuild for TypeScript instead of tsc
-    target: 'es2020'
+      'this-is-undefined-in-esm': 'silent'
+    }
   },
-  // Disable TypeScript checking in Vite
+  // Override TypeScript config path to avoid project reference issues
   define: {
     __DEV__: mode === 'development'
   }
