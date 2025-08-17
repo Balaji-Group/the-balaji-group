@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { withBase } from '@/lib/utils';
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -40,7 +41,7 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-4 group">
           <div className="relative">
             <img 
-              src="/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png" 
+              src={withBase('/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png')} 
               alt="Balaji Group Logo" 
               className="h-12 w-auto filter brightness-125 drop-shadow-lg transition-transform group-hover:scale-105"
             />

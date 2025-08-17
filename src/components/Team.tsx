@@ -1,18 +1,19 @@
 import { Briefcase, Calendar } from 'lucide-react';
+import { withBase } from '@/lib/utils';
 
 const Team = () => {
   const teamMembers = [
     {
       name: "DINESH GUPTA",
       position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: "/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png",
+      image: withBase('/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png'),
       joinYear: "2011",
       description: "Since becoming a partner in 2011, I have dedicated my efforts to enhancing the efficiency of our system. I firmly believe that with a robust system in place, we can excel at any given stage."
     },
     {
       name: "VIVEK AGARWAL", 
       position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: "/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png",
+      image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
       joinYear: "2017",
       description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
     }

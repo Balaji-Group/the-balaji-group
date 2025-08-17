@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Package, Shield, Award, Users, Star, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { withBase } from '@/lib/utils';
 
 const Hero = () => {
   return (
@@ -56,7 +57,7 @@ const Hero = () => {
             <div className="relative z-10 glass-heavy rounded-3xl p-14 shadow-large flex flex-col items-center pop-in">
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png" 
+                  src={withBase('/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png')} 
                   alt="Balaji Group Logo" 
                   className="h-44 w-auto mx-auto filter drop-shadow-xl animate-bounce"
                 />

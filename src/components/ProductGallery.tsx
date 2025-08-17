@@ -1,4 +1,5 @@
 import { Package, Box, Layers, Archive, Grid, Wrench, Shield, Truck } from 'lucide-react';
+import { withBase } from '@/lib/utils';
 
 const ProductGallery = () => {
   const productCategories = [
@@ -7,12 +8,12 @@ const ProductGallery = () => {
       description: "High-quality self-locking and telescope-style packaging solutions",
       images: [
         {
-          src: "/lovable-uploads/9e32d3b2-4372-46ed-84dc-5fa1d7057507.png",
+          src: withBase('/lovable-uploads/9e32d3b2-4372-46ed-84dc-5fa1d7057507.png'),
           alt: "Self-lock Box",
           name: "Premium Self-lock Box"
         },
         {
-          src: "/lovable-uploads/2fc955c0-0b4b-4b31-a1e0-a1f32a05c4a5.png", 
+          src: withBase('/lovable-uploads/2fc955c0-0b4b-4b31-a1e0-a1f32a05c4a5.png'), 
           alt: "Telescope Box",
           name: "Telescope Type Box"
         }
@@ -24,12 +25,12 @@ const ProductGallery = () => {
       description: "Premium mono cartons and retail display packaging",
       images: [
         {
-          src: "/lovable-uploads/6745c2c4-19df-451a-8fa1-fa4ea546dce9.png",
+          src: withBase('/lovable-uploads/6745c2c4-19df-451a-8fa1-fa4ea546dce9.png'),
           alt: "Mono Cartons",
           name: "Multi-size Mono Cartons"
         },
         {
-          src: "/lovable-uploads/bf4716eb-04da-4eb4-8edf-1167f2732164.png",
+          src: withBase('/lovable-uploads/bf4716eb-04da-4eb4-8edf-1167f2732164.png'),
           alt: "Display Carton",
           name: "Display Carton Tray"
         }
@@ -41,12 +42,12 @@ const ProductGallery = () => {
       description: "Industrial-grade corrugated boxes and kraft paper rolls",
       images: [
         {
-          src: "/lovable-uploads/f12ca268-35e7-4fa0-be92-7136817cbee7.png",
+          src: withBase('/lovable-uploads/f12ca268-35e7-4fa0-be92-7136817cbee7.png'),
           alt: "Corrugated Box",
           name: "Heavy-duty Corrugated Box"
         },
         {
-          src: "/lovable-uploads/87548fb1-5f11-4212-b6f4-f2dc4cad2bcb.png",
+          src: withBase('/lovable-uploads/87548fb1-5f11-4212-b6f4-f2dc4cad2bcb.png'),
           alt: "Kraft Paper Roll",
           name: "Kraft Paper Roll"
         }
@@ -58,7 +59,7 @@ const ProductGallery = () => {
       description: "Custom packaging solutions for specific industry needs",
       images: [
         {
-          src: "/lovable-uploads/ce006d9d-8bf1-4d0e-889e-0053bc15dd7c.png",
+          src: withBase('/lovable-uploads/ce006d9d-8bf1-4d0e-889e-0053bc15dd7c.png'),
           alt: "Shoe Box",
           name: "Premium Shoe Box"
         }
