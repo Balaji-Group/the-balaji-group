@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/balaji-group/",
+  base: "./",
   server: {
     host: "::",
     port: 8080,
@@ -25,5 +25,17 @@ export default defineConfig(({ mode }) => ({
     sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Skip TypeScript project reference warnings
+        if (warning.code === 'PLUGIN_WARNING' && warning.message.includes('Referenced project')) {
+          return;
+        }
+        warn(warning);
+      }
+    }
   },
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' }
+  }
 }));
