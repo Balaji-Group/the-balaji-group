@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: true,
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
   },
   esbuild: {
