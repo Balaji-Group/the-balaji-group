@@ -16,6 +16,34 @@ const Team = () => {
       image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
       joinYear: "2017",
       description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
+    },
+    {
+      name: "SUMIT GOEL",
+      position: "FOUNDING DIRECTOR",
+      image: withBase('/lovable-uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png'),
+      joinYear: "2002",
+      description: "Leading Balaji Group with a vision to revolutionize the packaging industry through innovation, quality, and customer-centric solutions."
+    },
+    {
+      name: "SUBHASH KR BOOBNA",
+      position: "DIRECTOR: GANPATI COROPLAST",
+      image: withBase('/lovable-uploads/5a737287-aaaa-4679-a99a-0c3c844cd5b4.png'),
+      joinYear: "2024",
+      description: "Bringing expertise in automated packaging solutions and driving the vision of Ganpati Coroplast to serve industries nationwide."
+    },
+    {
+      name: "ASHISH BOOBNA",
+      position: "DIRECTOR: GANPATI COROPLAST",
+      image: withBase('/lovable-uploads/5a737287-aaaa-4679-a99a-0c3c844cd5b4.png'),
+      joinYear: "2024",
+      description: "Focused on operational excellence and ensuring high-quality carton packaging solutions with cutting-edge technology."
+    },
+    {
+      name: "SHASWAT KAMALIA",
+      position: "DIRECTOR: GANPATI COROPLAST",
+      image: withBase('/lovable-uploads/5a737287-aaaa-4679-a99a-0c3c844cd5b4.png'),
+      joinYear: "2024",
+      description: "Committed to innovation and sustainability in packaging solutions, supporting the growth of emerging industries."
     }
   ];
 
@@ -34,7 +62,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16 animate-slideUp">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-12 max-w-7xl mx-auto mb-16 animate-slideUp">
           {teamMembers.map((member, index) => (
             <div key={index} className="group">
               <div className="card p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
