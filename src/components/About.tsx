@@ -79,40 +79,88 @@ const About = () => {
           </div>
         </div>
 
-        {/* Company Overview */}
+        {/* Our Journey */}
         <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
           <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Company Overview
+            Our Journey
           </h3>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <p className="text-off-white leading-relaxed mb-6">
-                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
-                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
-                trading industry, recognized for its quality products and dependable service.
-              </p>
-              <p className="text-off-white leading-relaxed">
-                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
-                Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
-                distribution network and a dedication to meeting the diverse needs of businesses across these regions.
+          <div className="space-y-8">
+            <div className="text-center mb-8">
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+                Our journey began in 2002 with Balaji Packaging Industries, and through innovation, dedication, and customer focus, we've grown into a comprehensive group of companies serving diverse packaging needs across India.
               </p>
             </div>
-            <div>
-              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Kraft paper & Duplex board
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Corrugated rolls, sheets and boxes
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Duplex/E-flute mono cartons
-                </li>
-              </ul>
+
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Timeline */}
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">2002</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Balaji Packaging Industries</h4>
+                    <p className="text-muted-foreground">Started as a manual corrugated plant in Rajasthan, providing customized packaging solutions.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-bold text-sm">2004</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Balaji Paper Mart</h4>
+                    <p className="text-muted-foreground">Expanded into trading Kraft paper and Duplex Board, becoming the heart of our operations.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold text-sm">2011</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Shri Balaji Packaging</h4>
+                    <p className="text-muted-foreground">Established fully automatic corrugated plant with state-of-the-art production facilities.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">2014</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Patna Board Boxes Industries</h4>
+                    <p className="text-muted-foreground">Specialized in complete packaging solutions under one roof in Bihar.</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-bold text-sm">2024</div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Ganpati Coroplast Pvt. Ltd.</h4>
+                    <p className="text-muted-foreground">Launched high-tech automated corrugated box unit in Patna, Bihar.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Key Achievements */}
+              <div className="space-y-6">
+                <h4 className="text-xl font-heading font-semibold text-primary mb-6">Key Milestones:</h4>
+                <ul className="space-y-4 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                    <span>Over <strong className="text-primary">22 years</strong> of industry excellence</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                    <span>Serving <strong className="text-primary">5 states</strong> across North and East India</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                    <span>Converting <strong className="text-primary">10,000 tons</strong> of paper per annum</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                    <span>ISO 9001 certified for quality management</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                    <span>Trusted by industry leaders like Anmol, Bikaji, Haldiram's, Hero Cycles, and VIP</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

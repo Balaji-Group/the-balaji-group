@@ -27,16 +27,16 @@ const OurGroup = () => {
       name: "Ganpati Coroplast Pvt. Ltd.",
       established: "2024",
       location: "Patna, Bihar",
-      description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
+      description: "A fully automated, high-tech corrugated box unit specializing in high-quality carton packaging solutions with a vision to serve a variety of industries nationwide.",
       icon: <Factory className="w-6 h-6" />
     },
     {
-      name: "Laxmi Packaging",
-      established: "Ongoing",
-      location: "Multi-location",
-      description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
+      name: "Patna Board Boxes Industries",
+      established: "2014",
+      location: "Bihar",
+      description: "Specializing in complete packaging solutions under one roof, manufacturing Mono Cartons, Special effect boxes, Card board boxes, Sweets Boxes, Brouchers, Leaftes, Posters etc., and multicolour offset printing.",
       icon: <Factory className="w-6 h-6" />
-    }
+    },
   ];
 
   return (
