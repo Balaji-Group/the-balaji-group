@@ -79,87 +79,132 @@ const About = () => {
           </div>
         </div>
 
-        {/* Our Journey */}
-        <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
-          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Our Journey
-          </h3>
-          <div className="space-y-8">
-            <div className="text-center mb-8">
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                Our journey began in 2002 with Balaji Packaging Industries, and through innovation, dedication, and customer focus, we've grown into a comprehensive group of companies serving diverse packaging needs across India.
-              </p>
-            </div>
+        {/* Our Journey - Artistic Timeline */}
+        <div className="relative mb-16 animate-fadeIn">
+          <div className="text-center mb-12">
+            <h3 className="text-4xl font-heading font-bold text-primary mb-6">
+              Our Journey
+            </h3>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto rounded-full mb-8"></div>
+          </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Timeline */}
-              <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">2002</div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Balaji Packaging Industries</h4>
-                    <p className="text-muted-foreground">Started as a manual corrugated plant in Rajasthan, providing customized packaging solutions.</p>
+          {/* Artistic Timeline Container */}
+          <div className="relative max-w-6xl mx-auto">
+            {/* Central Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-accent via-primary to-secondary rounded-full hidden lg:block"></div>
+            
+            {/* Timeline Events */}
+            <div className="space-y-12 lg:space-y-20">
+              {/* 2002 - Balaji Packaging Industries */}
+              <div className="relative flex items-center lg:justify-start">
+                <div className="w-full lg:w-1/2 lg:pr-12">
+                  <div className="card p-6 ml-8 lg:ml-0 relative group hover:shadow-large transition-all duration-300">
+                    <div className="absolute -left-8 lg:-right-8 lg:left-auto top-1/2 transform -translate-y-1/2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-large group-hover:scale-110 transition-transform">
+                        02
+                      </div>
+                    </div>
+                    <div className="absolute lg:hidden -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent to-primary"></div>
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">Balaji Packaging Industries</h4>
+                    <p className="text-accent font-semibold mb-3">2002 • Rajasthan</p>
+                    <p className="text-muted-foreground">The foundation stone of our empire - a manual corrugated plant that started our journey in packaging excellence.</p>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-bold text-sm">2004</div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Balaji Paper Mart</h4>
-                    <p className="text-muted-foreground">Expanded into trading Kraft paper and Duplex Board, becoming the heart of our operations.</p>
-                  </div>
-                </div>
+                <div className="hidden lg:block w-1/2"></div>
+              </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-accent-foreground font-bold text-sm">2011</div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Shri Balaji Packaging</h4>
-                    <p className="text-muted-foreground">Established fully automatic corrugated plant with state-of-the-art production facilities.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-sm">2014</div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Patna Board Boxes Industries</h4>
-                    <p className="text-muted-foreground">Specialized in complete packaging solutions under one roof in Bihar.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-secondary-foreground font-bold text-sm">2024</div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-primary mb-2">Ganpati Coroplast Pvt. Ltd.</h4>
-                    <p className="text-muted-foreground">Launched high-tech automated corrugated box unit in Patna, Bihar.</p>
+              {/* 2004 - Balaji Paper Mart */}
+              <div className="relative flex items-center lg:justify-end">
+                <div className="hidden lg:block w-1/2"></div>
+                <div className="w-full lg:w-1/2 lg:pl-12">
+                  <div className="card p-6 ml-8 lg:ml-0 relative group hover:shadow-large transition-all duration-300">
+                    <div className="absolute -left-8 lg:-left-8 top-1/2 transform -translate-y-1/2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg shadow-large group-hover:scale-110 transition-transform">
+                        04
+                      </div>
+                    </div>
+                    <div className="absolute lg:hidden -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary to-accent"></div>
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">Balaji Paper Mart</h4>
+                    <p className="text-accent font-semibold mb-3">2004 • Multi-state Operations</p>
+                    <p className="text-muted-foreground">The heart of our operations - expanding wings across Rajasthan, UP, Himachal, Bihar, and NCR.</p>
                   </div>
                 </div>
               </div>
 
-              {/* Key Achievements */}
-              <div className="space-y-6">
-                <h4 className="text-xl font-heading font-semibold text-primary mb-6">Key Milestones:</h4>
-                <ul className="space-y-4 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                    <span>Over <strong className="text-primary">22 years</strong> of industry excellence</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                    <span>Serving <strong className="text-primary">5 states</strong> across North and East India</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                    <span>Converting <strong className="text-primary">10,000 tons</strong> of paper per annum</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                    <span>ISO 9001 certified for quality management</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
-                    <span>Trusted by industry leaders like Anmol, Bikaji, Haldiram's, Hero Cycles, and VIP</span>
-                  </li>
-                </ul>
+              {/* 2011 - Shri Balaji Packaging */}
+              <div className="relative flex items-center lg:justify-start">
+                <div className="w-full lg:w-1/2 lg:pr-12">
+                  <div className="card p-6 ml-8 lg:ml-0 relative group hover:shadow-large transition-all duration-300">
+                    <div className="absolute -left-8 lg:-right-8 lg:left-auto top-1/2 transform -translate-y-1/2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-large group-hover:scale-110 transition-transform">
+                        11
+                      </div>
+                    </div>
+                    <div className="absolute lg:hidden -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-secondary"></div>
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">Shri Balaji Packaging</h4>
+                    <p className="text-accent font-semibold mb-3">2011 • Rajasthan</p>
+                    <p className="text-muted-foreground">Automation revolution - state-of-the-art facility converting 10,000 tons of paper annually.</p>
+                  </div>
+                </div>
+                <div className="hidden lg:block w-1/2"></div>
+              </div>
+
+              {/* 2014 - Patna Board Boxes */}
+              <div className="relative flex items-center lg:justify-end">
+                <div className="hidden lg:block w-1/2"></div>
+                <div className="w-full lg:w-1/2 lg:pl-12">
+                  <div className="card p-6 ml-8 lg:ml-0 relative group hover:shadow-large transition-all duration-300">
+                    <div className="absolute -left-8 lg:-left-8 top-1/2 transform -translate-y-1/2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-large group-hover:scale-110 transition-transform">
+                        14
+                      </div>
+                    </div>
+                    <div className="absolute lg:hidden -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent to-primary"></div>
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">Patna Board Boxes Industries</h4>
+                    <p className="text-accent font-semibold mb-3">2014 • Bihar</p>
+                    <p className="text-muted-foreground">Complete packaging ecosystem - from mono cartons to multicolor offset printing under one roof.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2024 - Ganpati Coroplast */}
+              <div className="relative flex items-center lg:justify-start">
+                <div className="w-full lg:w-1/2 lg:pr-12">
+                  <div className="card p-6 ml-8 lg:ml-0 relative group hover:shadow-large transition-all duration-300 border-2 border-accent/20">
+                    <div className="absolute -left-8 lg:-right-8 lg:left-auto top-1/2 transform -translate-y-1/2">
+                      <div className="w-16 h-16 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg shadow-large group-hover:scale-110 transition-transform animate-pulse">
+                        24
+                      </div>
+                    </div>
+                    <div className="absolute lg:hidden -left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent to-secondary"></div>
+                    <div className="absolute top-2 right-2">
+                      <span className="bg-accent text-accent-foreground text-xs px-2 py-1 rounded-full font-semibold">Latest</span>
+                    </div>
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">Ganpati Coroplast Pvt. Ltd.</h4>
+                    <p className="text-accent font-semibold mb-3">2024 • Patna, Bihar</p>
+                    <p className="text-muted-foreground">Future-ready technology - high-tech automated solutions serving industries nationwide.</p>
+                  </div>
+                </div>
+                <div className="hidden lg:block w-1/2"></div>
+              </div>
+            </div>
+
+            {/* Achievement Highlights */}
+            <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="card p-6 text-center hover:shadow-large transition-all duration-300 hover:-translate-y-1">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">22+</div>
+                <h5 className="text-lg font-semibold text-primary mb-2">Years of Excellence</h5>
+                <p className="text-muted-foreground text-sm">Building trust since 2002</p>
+              </div>
+              <div className="card p-6 text-center hover:shadow-large transition-all duration-300 hover:-translate-y-1">
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center text-white font-bold text-2xl mx-auto mb-4">5</div>
+                <h5 className="text-lg font-semibold text-primary mb-2">States Covered</h5>
+                <p className="text-muted-foreground text-sm">Pan-India presence</p>
+              </div>
+              <div className="card p-6 text-center hover:shadow-large transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">10K</div>
+                <h5 className="text-lg font-semibold text-primary mb-2">Tons Annually</h5>
+                <p className="text-muted-foreground text-sm">Paper conversion capacity</p>
               </div>
             </div>
           </div>
