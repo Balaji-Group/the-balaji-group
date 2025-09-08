@@ -79,40 +79,102 @@ const About = () => {
           </div>
         </div>
 
-        {/* Company Overview */}
+        {/* Our Journey */}
         <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
-          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Company Overview
+          <h3 className="text-3xl font-heading font-bold text-primary mb-12 text-center">
+            Our Journey
           </h3>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <p className="text-off-white leading-relaxed mb-6">
-                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
-                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
-                trading industry, recognized for its quality products and dependable service.
-              </p>
-              <p className="text-off-white leading-relaxed">
-                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
-                Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
-                distribution network and a dedication to meeting the diverse needs of businesses across these regions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Kraft paper & Duplex board
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Corrugated rolls, sheets and boxes
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Duplex/E-flute mono cartons
-                </li>
-              </ul>
+          
+          <div className="relative">
+            {/* Timeline path */}
+            <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-px h-96 bg-gradient-to-b from-accent via-primary to-accent opacity-30"></div>
+            
+            {/* Journey items */}
+            <div className="space-y-16">
+              {/* 2002 - Balaji Packaging Industries */}
+              <div className="flex items-center justify-between">
+                <div className="w-5/12 text-right">
+                  <div className="bg-accent/10 rounded-3xl p-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">BALAJI PACKAGING INDUSTRIES</h4>
+                    <p className="text-accent font-semibold mb-3">(2002)</p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Started trading in kraft paper and duplex board. Manual plant in Rajasthan.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-2/12 flex justify-center">
+                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg z-10"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+
+              {/* 2004 - Balaji Paper Mart */}
+              <div className="flex items-center justify-between">
+                <div className="w-5/12"></div>
+                <div className="w-2/12 flex justify-center">
+                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
+                </div>
+                <div className="w-5/12">
+                  <div className="bg-primary/10 rounded-3xl p-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">BALAJI PAPER MART</h4>
+                    <p className="text-accent font-semibold mb-3">(2004)</p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Expanded operations as a trusted trader in kraft paper and duplex board.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2011 - Shri Balaji Packaging */}
+              <div className="flex items-center justify-between">
+                <div className="w-5/12 text-right">
+                  <div className="bg-secondary/10 rounded-3xl p-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">SHRI BALAJI PACKAGING</h4>
+                    <p className="text-accent font-semibold mb-3">(2011)</p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Fully automatic plant in Rajasthan specializing in all types of customized packaging.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-2/12 flex justify-center">
+                  <div className="w-4 h-4 bg-secondary rounded-full border-4 border-background shadow-lg z-10"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
+
+              {/* 2014 - Patna Board Boxes */}
+              <div className="flex items-center justify-between">
+                <div className="w-5/12"></div>
+                <div className="w-2/12 flex justify-center">
+                  <div className="w-4 h-4 bg-accent rounded-full border-4 border-background shadow-lg z-10"></div>
+                </div>
+                <div className="w-5/12">
+                  <div className="bg-accent/10 rounded-3xl p-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">PATNA BOARD BOXES INDUSTRIES</h4>
+                    <p className="text-accent font-semibold mb-3">(2014)</p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Established operations in Patna to serve eastern markets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2024 - Ganpati Coroplast */}
+              <div className="flex items-center justify-between">
+                <div className="w-5/12 text-right">
+                  <div className="bg-primary/10 rounded-3xl p-6">
+                    <h4 className="text-xl font-heading font-bold text-primary mb-2">GANPATI COROPLAST Pvt. Ltd.</h4>
+                    <p className="text-accent font-semibold mb-3">(2024)</p>
+                    <p className="text-sm text-foreground leading-relaxed">
+                      Another fully automatic plant in Patna with advanced production capabilities.
+                    </p>
+                  </div>
+                </div>
+                <div className="w-2/12 flex justify-center">
+                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
+                </div>
+                <div className="w-5/12"></div>
+              </div>
             </div>
           </div>
         </div>
