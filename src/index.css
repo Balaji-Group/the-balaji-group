@@ -5,57 +5,57 @@
 
 @layer base {
   :root {
-    /* Vibrant Multi-Color Palette (Red Accent, Dark Blue Background) */
-    --background: 222 47% 10%;      /* Deep Navy */
-    --foreground: 220 20% 98%;      /* Near White */
-    --off-white-foreground: 220 20% 92%; /* Off-white for subtle text */
-    --primary: 212 100% 52%;        /* Vivid Blue */
-    --primary-foreground: 220 20% 98%;
-    --secondary: 192 100% 44%;      /* Teal Accent */
-    --secondary-foreground: 220 20% 98%;
-    --accent: 0 80% 60%;            /* Vibrant Red Accent */
-    --accent-foreground: 222 47% 10%;
-    --danger: 0 80% 60%;            /* Red */
-    --danger-foreground: 220 20% 98%;
-    --card: 222 30% 14%;            /* Card Navy */
-    --card-foreground: 220 20% 98%;
-    --popover: 222 30% 14%;
-    --popover-foreground: 220 20% 98%;
-    --muted: 222 20% 22%;
-    --muted-foreground: 220 20% 80%;
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 212 100% 52%;
+    /* Warm Beige and Brown Palette */
+    --background: 30 15% 92%;       /* Warm Beige */
+    --foreground: 25 20% 20%;       /* Dark Brown */
+    --off-white-foreground: 30 15% 25%; /* Darker brown for subtle text */
+    --primary: 25 35% 45%;          /* Medium Brown */
+    --primary-foreground: 30 15% 92%;
+    --secondary: 35 25% 65%;        /* Light Brown/Tan */
+    --secondary-foreground: 25 20% 20%;
+    --accent: 20 45% 35%;           /* Dark Warm Brown */
+    --accent-foreground: 30 15% 92%;
+    --danger: 0 65% 50%;            /* Muted Red */
+    --danger-foreground: 30 15% 92%;
+    --card: 30 20% 88%;             /* Light Beige Card */
+    --card-foreground: 25 20% 20%;
+    --popover: 30 20% 88%;
+    --popover-foreground: 25 20% 20%;
+    --muted: 30 12% 80%;
+    --muted-foreground: 25 15% 45%;
+    --border: 30 15% 75%;
+    --input: 30 15% 85%;
+    --ring: 25 35% 45%;
     --radius: 1.2rem;
-    --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
-    --shadow-glow: 0 0 24px 2px hsla(var(--accent), 0.5);
-    --shadow-blue: 0 4px 32px 0 hsla(var(--primary), 0.25);
-    --shadow-teal: 0 4px 32px 0 hsla(var(--secondary), 0.18);
-    --shadow-red: 0 4px 32px 0 hsla(var(--accent), 0.18);
+    --shadow: 0 8px 40px 0 rgba(80, 60, 40, 0.12);
+    --shadow-glow: 0 0 24px 2px hsla(var(--accent), 0.3);
+    --shadow-brown: 0 4px 32px 0 hsla(var(--primary), 0.15);
+    --shadow-tan: 0 4px 32px 0 hsla(var(--secondary), 0.12);
+    --shadow-accent: 0 4px 32px 0 hsla(var(--accent), 0.15);
   }
   [data-theme="light"] {
-    --background: 222 47% 10%;      /* Deep Navy (same as dark) */
-    --foreground: 220 20% 98%;      /* Near White */
-    --off-white-foreground: 220 20% 92%;
-    --primary: 212 100% 52%;
-    --primary-foreground: 220 20% 98%;
-    --secondary: 192 100% 44%;
-    --secondary-foreground: 220 20% 98%;
-    --accent: 0 80% 60%;
-    --accent-foreground: 220 20% 98%;
-    --card: 222 30% 14%;
-    --card-foreground: 220 20% 98%;
-    --popover: 222 30% 14%;
-    --popover-foreground: 220 20% 98%;
-    --muted: 222 20% 22%;
-    --muted-foreground: 220 20% 80%;
-    --destructive: 0 80% 60%;
-    --destructive-foreground: 220 20% 98%;
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 212 100% 52%;
+    --background: 30 15% 92%;       /* Warm Beige */
+    --foreground: 25 20% 20%;       /* Dark Brown */
+    --off-white-foreground: 30 15% 25%;
+    --primary: 25 35% 45%;
+    --primary-foreground: 30 15% 92%;
+    --secondary: 35 25% 65%;
+    --secondary-foreground: 25 20% 20%;
+    --accent: 20 45% 35%;
+    --accent-foreground: 30 15% 92%;
+    --card: 30 20% 88%;
+    --card-foreground: 25 20% 20%;
+    --popover: 30 20% 88%;
+    --popover-foreground: 25 20% 20%;
+    --muted: 30 12% 80%;
+    --muted-foreground: 25 15% 45%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 30 15% 92%;
+    --border: 30 15% 75%;
+    --input: 30 15% 85%;
+    --ring: 25 35% 45%;
     --radius: 1.2rem;
-    --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
+    --shadow: 0 8px 40px 0 rgba(80, 60, 40, 0.12);
   }
 }
 
@@ -164,21 +164,21 @@
   }
   .glass-heavy {
     background: hsla(var(--card), 0.85);
-    box-shadow: var(--shadow-blue), var(--shadow-glow);
+    box-shadow: var(--shadow-brown), var(--shadow-glow);
     backdrop-filter: blur(24px) saturate(1.5);
     border-radius: var(--radius);
     border: 2px solid hsla(var(--primary), 0.18);
   }
   .card-vibrant {
     background: linear-gradient(120deg, hsl(var(--card)) 60%, hsl(var(--secondary)) 100%);
-    box-shadow: var(--shadow-teal), var(--shadow-glow);
+    box-shadow: var(--shadow-tan), var(--shadow-glow);
     border-radius: var(--radius);
     border: 2px solid hsla(var(--secondary), 0.18);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   .card-vibrant:hover {
     transform: translateY(-6px) scale(1.03) rotate(-1deg);
-    box-shadow: var(--shadow-red), 0 0 32px 4px hsla(var(--accent), 0.25);
+    box-shadow: var(--shadow-accent), 0 0 32px 4px hsla(var(--accent), 0.25);
     border-color: hsl(var(--accent));
   }
   .btn-gradient {
@@ -204,14 +204,14 @@
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
-  .shadow-blue {
-    box-shadow: var(--shadow-blue);
+  .shadow-brown {
+    box-shadow: var(--shadow-brown);
   }
-  .shadow-teal {
-    box-shadow: var(--shadow-teal);
+  .shadow-tan {
+    box-shadow: var(--shadow-tan);
   }
-  .shadow-red {
-    box-shadow: var(--shadow-red);
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
   }
 }
 
@@ -274,7 +274,7 @@
 /* Responsive Design tweaks for heavy look */
 @media (min-width: 1024px) {
   .card-vibrant, .glass-heavy {
-    box-shadow: 0 8px 48px 0 rgba(0, 20, 40, 0.22), 0 0 32px 4px hsla(var(--accent), 0.18);
+    box-shadow: 0 8px 48px 0 rgba(80, 60, 40, 0.18), 0 0 32px 4px hsla(var(--accent), 0.18);
   }
 }
 
