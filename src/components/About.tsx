@@ -207,23 +207,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="mb-20 animate-slideUp">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Our Leadership Team</h3>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="card p-6 text-center group hover:shadow-large transition-all duration-300">
-                <div className="w-20 h-20 bg-gradient-to-r from-accent to-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="text-lg font-heading font-bold text-primary mb-2">{member.name}</h4>
-                <p className="text-accent font-medium">{member.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Plant & Machinery */}
         <div className="mb-20 animate-fadeIn">
@@ -325,50 +308,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Contact Information */}
-        <div className="animate-slideUp">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Contact Us</h3>
-            <p className="text-lg text-muted-foreground">We are ready to assist you</p>
-          </div>
-          <div className="card p-10 max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Phone</h4>
-                  <p className="text-muted-foreground">+91 98290 69467</p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto">
-                  <Mail className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Email</h4>
-                  <p className="text-muted-foreground">director@ganpaticoroplast.com</p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mx-auto">
-                  <MapPin className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-primary mb-2">Address</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Opp. Chhapak Water Park Khasra No. 184 418 419<br/>
-                    Patna Bakhtiyarpur Road, Jethuli<br/>
-                    Fatuah, Patna, Bihar, 803201
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
