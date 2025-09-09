@@ -28,7 +28,8 @@ const OurGroup = () => {
       established: "2024",
       location: "Patna, Bihar",
       description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
-      icon: <Factory className="w-6 h-6" />
+      icon: <Factory className="w-6 h-6" />,
+      isGanpati: true
     },
     {
       name: "Laxmi Packaging",
@@ -90,6 +91,35 @@ const OurGroup = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Ganpati Coroplast About Section */}
+        <div className="mt-20 animate-fadeIn">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Ganpati Coroplast</h3>
+            <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full">
+              <span className="text-accent text-sm font-semibold tracking-wide">
+                About The Company
+              </span>
+            </div>
+          </div>
+          <div className="max-w-4xl mx-auto card p-8">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              Ganpati Coroplast specialises in manufacturing high-quality carton packaging solutions with a 
+              vision to serve a variety of industries nationwide. With a focus on innovation, sustainability, 
+              and customer satisfaction, we deliver customizable packaging tailored to meet our clients' needs.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Our commitment to excellence, eco-friendly practices, and exceptional service sets us apart as a 
+              trusted partner in packaging solutions.
+            </p>
+            <div className="mt-6 text-center">
+              <p className="text-xl font-semibold text-accent">
+                Discover the difference with Ganpati Coroplast where innovation, sustainability and customer 
+                satisfaction converge to redefine packaging excellence.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Company Overview */}

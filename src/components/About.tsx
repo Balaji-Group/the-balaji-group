@@ -35,34 +35,7 @@ const About = () => {
   return (
     <section id="about" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
-        {/* Hero Section */}
-        <div className="text-center mb-16 animate-fadeIn">
-          <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full mb-6">
-            <span className="text-accent text-sm font-semibold tracking-wide">
-              About Ganpati Coroplast
-            </span>
-          </div>
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">About The Company</h2>
-          <div className="max-w-4xl mx-auto card p-8">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Ganpati Coroplast specialises in manufacturing high-quality carton packaging solutions with a 
-              vision to serve a variety of industries nationwide. With a focus on innovation, sustainability, 
-              and customer satisfaction, we deliver customizable packaging tailored to meet our clients' needs.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Our commitment to excellence, eco-friendly practices, and exceptional service sets us apart as a 
-              trusted partner in packaging solutions.
-            </p>
-            <div className="mt-6 text-center">
-              <p className="text-xl font-semibold text-accent">
-                Discover the difference with Ganpati Coroplast where innovation, sustainability and customer 
-                satisfaction converge to redefine packaging excellence.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Journey Timeline - New Information */}
+        {/* Journey Timeline */}
         <div className="mb-20 animate-slideUp">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-heading font-bold text-primary mb-4">Our Journey</h3>
