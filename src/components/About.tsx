@@ -79,43 +79,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Company Overview */}
-        <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
-          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Company Overview
-          </h3>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <p className="text-off-white leading-relaxed mb-6">
-                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
-                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
-                trading industry, recognized for its quality products and dependable service.
-              </p>
-              <p className="text-off-white leading-relaxed">
-                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
-                Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
-                distribution network and a dedication to meeting the diverse needs of businesses across these regions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Kraft paper & Duplex board
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Corrugated rolls, sheets and boxes
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Duplex/E-flute mono cartons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideUp">
