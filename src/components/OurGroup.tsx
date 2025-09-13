@@ -81,7 +81,7 @@ const OurGroup = () => {
         <Carousel className="w-full max-w-7xl mx-auto animate-slideUp" opts={{ align: "start", loop: true }}>
           <CarouselContent className="-ml-4">
             {companies.map((company, index) => (
-              <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={index} className="pl-4 basis-full">
                 <div className="group relative h-full">
                   <div className="card p-8 h-full flex flex-col">
                     {/* Header with Icon and Date */}
