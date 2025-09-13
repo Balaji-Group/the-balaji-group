@@ -1,27 +1,31 @@
-import { Calendar, MapPin, Factory, Truck, Briefcase } from 'lucide-react';
+import { Calendar, MapPin, Factory, Truck, Briefcase, Users } from 'lucide-react';
 import { withBase } from '@/lib/utils';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const OurGroup = () => {
   const companies = [
     {
       name: "Balaji Packaging Industries",
       established: "2002",
-      location: "Rajasthan",
+      location: "Rajasthan, India",
       description: "A manual corrugated plant providing customized solutions both in terms of Corrugated boxes and Mono cartoons.",
+      partners: ["Founding Partner: Mr. Rajesh Kumar", "Technical Partner: Mr. Amit Sharma"],
       icon: <Factory className="w-6 h-6" />
     },
     {
       name: "Balaji Paper Mart",
       established: "2004",
-      location: "Multi-state",
+      location: "Jaipur, Rajasthan (Multi-state operations)",
       description: "The heart and soul of Balaji Group, trading in Kraft paper and Duplex Board with wings spread in Rajasthan, Western UP, Himachal, Bihar and NCR region.",
+      partners: ["Managing Partner: Mr. Sumit Goel", "Operations Partner: Mr. Vikash Gupta"],
       icon: <Truck className="w-6 h-6" />
     },
     {
       name: "Shri Balaji Packaging",
       established: "2011",
-      location: "Rajasthan",
+      location: "Rajasthan, India",
       description: "A fully automatic corrugated plant fitted with the latest state of the art production facility currently converting 10,000 tons of paper per annum into corrugated boxes.",
+      partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal"],
       icon: <Factory className="w-6 h-6" />
     },
     {
@@ -29,13 +33,15 @@ const OurGroup = () => {
       established: "2024",
       location: "Patna, Bihar",
       description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
+      partners: ["Director: Mr. Ravi Shankar", "Technical Head: Mr. Pradeep Singh"],
       icon: <Factory className="w-6 h-6" />
     },
     {
       name: "Laxmi Packaging",
-      established: "Ongoing",
-      location: "Multi-location",
+      established: "Coming Soon",
+      location: "Multi-location expansion",
       description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
+      partners: ["Strategic Partner: TBA", "Operations Lead: TBA"],
       icon: <Factory className="w-6 h-6" />
     }
   ];
@@ -72,43 +78,65 @@ const OurGroup = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slideUp">
-          {companies.map((company, index) => (
-            <div key={index} className="group relative">
-              <div className="card p-8 h-full">
-                {/* Icon and established year */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white group-hover:bg-accent transition-colors">
-                    {company.icon}
-                  </div>
-                  <div className="flex items-center text-accent">
-                    <Calendar className="w-4 h-4 mr-1" />
-                    <span className="text-sm font-semibold">{company.established}</span>
+        <Carousel className="w-full max-w-7xl mx-auto animate-slideUp" opts={{ align: "start", loop: true }}>
+          <CarouselContent className="-ml-4">
+            {companies.map((company, index) => (
+              <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="group relative h-full">
+                  <div className="card p-8 h-full flex flex-col">
+                    {/* Header with Icon and Date */}
+                    <div className="flex items-center justify-between mb-6">
+                      <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center text-white group-hover:bg-accent transition-colors">
+                        {company.icon}
+                      </div>
+                      <div className="flex items-center text-accent">
+                        <Calendar className="w-4 h-4 mr-1" />
+                        <span className="text-sm font-semibold">{company.established}</span>
+                      </div>
+                    </div>
+
+                    {/* Company Name */}
+                    <h3 className="text-xl font-heading font-bold text-primary mb-4 group-hover:text-accent transition-colors">
+                      {company.name}
+                    </h3>
+
+                    {/* Location */}
+                    <div className="flex items-start text-off-white mb-4">
+                      <MapPin className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">{company.location}</span>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-off-white text-sm leading-relaxed mb-6 flex-grow">
+                      {company.description}
+                    </p>
+
+                    {/* Partners Section */}
+                    <div className="border-t border-border pt-4">
+                      <div className="flex items-center mb-3">
+                        <Users className="w-4 h-4 mr-2 text-accent" />
+                        <span className="text-sm font-semibold text-primary">Key Partners</span>
+                      </div>
+                      <div className="space-y-2">
+                        {company.partners.map((partner, partnerIndex) => (
+                          <div key={partnerIndex} className="text-xs text-muted-foreground flex items-center">
+                            <div className="w-2 h-2 bg-accent rounded-full mr-2 flex-shrink-0"></div>
+                            {partner}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Decorative element */}
+                    <div className="absolute top-4 right-4 w-8 h-8 bg-accent/10 rounded-full group-hover:bg-accent/20 transition-colors"></div>
                   </div>
                 </div>
-
-                {/* Company name */}
-                <h3 className="text-xl font-heading font-bold text-primary mb-3 group-hover:text-accent transition-colors">
-                  {company.name}
-                </h3>
-
-                {/* Location */}
-                <div className="flex items-center text-off-white mb-4">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  <span className="text-sm">{company.location}</span>
-                </div>
-
-                {/* Description */}
-                <p className="text-off-white text-sm leading-relaxed">
-                  {company.description}
-                </p>
-
-                {/* Decorative element */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-accent/10 rounded-full group-hover:bg-accent/20 transition-colors"></div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
 
         {/* Balaji Paper Mart Detailed Section */}
         <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
