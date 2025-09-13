@@ -79,6 +79,23 @@ const About = () => {
           </div>
         </div>
 
+        {/* Our Journey Section */}
+        <div className="mb-20 animate-fadeIn">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Our Journey</h3>
+            <p className="text-lg text-off-white max-w-2xl mx-auto">
+              From humble beginnings to industry leadership - discover the milestones that shaped our company
+            </p>
+          </div>
+          <div className="w-full max-w-7xl mx-auto">
+            <img 
+              src={withBase('/lovable-uploads/our-journey.png')} 
+              alt="Our Journey - Timeline of Balaji Group companies from 2002 to 2024" 
+              className="w-full h-auto object-contain rounded-2xl shadow-large"
+            />
+          </div>
+        </div>
+
 
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideUp">
