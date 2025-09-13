@@ -1,70 +1,57 @@
 import { Calendar, MapPin, Factory, Truck, Briefcase, Users } from 'lucide-react';
 import { withBase } from '@/lib/utils';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-
 const OurGroup = () => {
-  const companies = [
-    {
-      name: "Balaji Packaging Industries",
-      established: "2002",
-      location: "Rajasthan, India",
-      description: "A manual corrugated plant providing customized solutions both in terms of Corrugated boxes and Mono cartoons.",
-      partners: ["Founding Partner: Mr. Rajesh Kumar", "Technical Partner: Mr. Amit Sharma"],
-      icon: <Factory className="w-6 h-6" />
-    },
-    {
-      name: "Balaji Paper Mart",
-      established: "2004",
-      location: "Jaipur, Rajasthan (Multi-state operations)",
-      description: "The heart and soul of Balaji Group, trading in Kraft paper and Duplex Board with wings spread in Rajasthan, Western UP, Himachal, Bihar and NCR region.",
-      partners: ["Managing Partner: Mr. Sumit Goel", "Operations Partner: Mr. Vikash Gupta"],
-      icon: <Truck className="w-6 h-6" />
-    },
-    {
-      name: "Shri Balaji Packaging",
-      established: "2011",
-      location: "Rajasthan, India",
-      description: "A fully automatic corrugated plant fitted with the latest state of the art production facility currently converting 10,000 tons of paper per annum into corrugated boxes.",
-      partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal"],
-      icon: <Factory className="w-6 h-6" />
-    },
-    {
-      name: "Ganpati Coroplast Pvt. Ltd.",
-      established: "2024",
-      location: "Patna, Bihar",
-      description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
-      partners: ["Director: Mr. Ravi Shankar", "Technical Head: Mr. Pradeep Singh"],
-      icon: <Factory className="w-6 h-6" />
-    },
-    {
-      name: "Laxmi Packaging",
-      established: "Coming Soon",
-      location: "Multi-location expansion",
-      description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
-      partners: ["Strategic Partner: TBA", "Operations Lead: TBA"],
-      icon: <Factory className="w-6 h-6" />
-    }
-  ];
-
-  const teamMembers = [
-    {
-      name: "DINESH GUPTA",
-      position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: withBase('/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png'),
-      joinYear: "2011",
-      description: "Since becoming a partner in 2011, I have dedicated my efforts to enhancing the efficiency of our system. I firmly believe that with a robust system in place, we can excel at any given stage."
-    },
-    {
-      name: "VIVEK AGARWAL", 
-      position: "PARTNER: SHRI BALAJI PACKAGING",
-      image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
-      joinYear: "2017",
-      description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
-    }
-  ];
-
-  return (
-    <section id="group" className="section fade-in bg-background">
+  const companies = [{
+    name: "Balaji Packaging Industries",
+    established: "2002",
+    location: "Rajasthan, India",
+    description: "A manual corrugated plant providing customized solutions both in terms of Corrugated boxes and Mono cartoons.",
+    partners: ["Founding Partner: Mr. Rajesh Kumar", "Technical Partner: Mr. Amit Sharma"],
+    icon: <Factory className="w-6 h-6" />
+  }, {
+    name: "Balaji Paper Mart",
+    established: "2004",
+    location: "Jaipur, Rajasthan (Multi-state operations)",
+    description: "The heart and soul of Balaji Group, trading in Kraft paper and Duplex Board with wings spread in Rajasthan, Western UP, Himachal, Bihar and NCR region.",
+    partners: ["Managing Partner: Mr. Sumit Goel", "Operations Partner: Mr. Vikash Gupta"],
+    icon: <Truck className="w-6 h-6" />
+  }, {
+    name: "Shri Balaji Packaging",
+    established: "2011",
+    location: "Rajasthan, India",
+    description: "A fully automatic corrugated plant fitted with the latest state of the art production facility currently converting 10,000 tons of paper per annum into corrugated boxes.",
+    partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal"],
+    icon: <Factory className="w-6 h-6" />
+  }, {
+    name: "Ganpati Coroplast Pvt. Ltd.",
+    established: "2024",
+    location: "Patna, Bihar",
+    description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
+    partners: ["Director: Mr. Ravi Shankar", "Technical Head: Mr. Pradeep Singh"],
+    icon: <Factory className="w-6 h-6" />
+  }, {
+    name: "Laxmi Packaging",
+    established: "Coming Soon",
+    location: "Multi-location expansion",
+    description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
+    partners: ["Strategic Partner: TBA", "Operations Lead: TBA"],
+    icon: <Factory className="w-6 h-6" />
+  }];
+  const teamMembers = [{
+    name: "DINESH GUPTA",
+    position: "PARTNER: SHRI BALAJI PACKAGING",
+    image: withBase('/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png'),
+    joinYear: "2011",
+    description: "Since becoming a partner in 2011, I have dedicated my efforts to enhancing the efficiency of our system. I firmly believe that with a robust system in place, we can excel at any given stage."
+  }, {
+    name: "VIVEK AGARWAL",
+    position: "PARTNER: SHRI BALAJI PACKAGING",
+    image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
+    joinYear: "2017",
+    description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
+  }];
+  return <section id="group" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fadeIn">
           <div className="inline-flex items-center px-4 py-2 bg-accent/10 dark:bg-accent/20 rounded-full mb-6">
@@ -78,10 +65,12 @@ const OurGroup = () => {
           </p>
         </div>
 
-        <Carousel className="w-full max-w-7xl mx-auto animate-slideUp" opts={{ align: "start", loop: true }}>
+        <Carousel className="w-full max-w-7xl mx-auto animate-slideUp" opts={{
+        align: "start",
+        loop: true
+      }}>
           <CarouselContent className="-ml-4">
-            {companies.map((company, index) => (
-              <CarouselItem key={index} className="pl-4 basis-full">
+            {companies.map((company, index) => <CarouselItem key={index} className="pl-4 basis-full">
                 <div className="group relative h-full">
                   <div className="card p-8 h-full flex flex-col">
                     {/* Header with Icon and Date */}
@@ -118,12 +107,10 @@ const OurGroup = () => {
                         <span className="text-sm font-semibold text-primary">Key Partners</span>
                       </div>
                       <div className="space-y-2">
-                        {company.partners.map((partner, partnerIndex) => (
-                          <div key={partnerIndex} className="text-xs text-muted-foreground flex items-center">
+                        {company.partners.map((partner, partnerIndex) => <div key={partnerIndex} className="text-xs text-muted-foreground flex items-center">
                             <div className="w-2 h-2 bg-accent rounded-full mr-2 flex-shrink-0"></div>
                             {partner}
-                          </div>
-                        ))}
+                          </div>)}
                       </div>
                     </div>
 
@@ -131,50 +118,14 @@ const OurGroup = () => {
                     <div className="absolute top-4 right-4 w-8 h-8 bg-accent/10 rounded-full group-hover:bg-accent/20 transition-colors"></div>
                   </div>
                 </div>
-              </CarouselItem>
-            ))}
+              </CarouselItem>)}
           </CarouselContent>
           <CarouselPrevious className="hidden md:flex" />
           <CarouselNext className="hidden md:flex" />
         </Carousel>
 
         {/* Balaji Paper Mart Detailed Section */}
-        <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
-          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
-            Balaji Paper Mart - Company Overview
-          </h3>
-          <div className="grid md:grid-cols-2 gap-10">
-            <div>
-              <p className="text-off-white leading-relaxed mb-6">
-                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
-                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
-                trading industry, recognized for its quality products and dependable service.
-              </p>
-              <p className="text-off-white leading-relaxed">
-                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
-                Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
-                distribution network and a dedication to meeting the diverse needs of businesses across these regions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
-              <ul className="space-y-3 text-foreground">
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Kraft paper & Duplex board
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Corrugated rolls, sheets and boxes
-                </li>
-                <li className="flex items-center">
-                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
-                  Duplex/E-flute mono cartons
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Leadership Team Section */}
         <div className="mt-24">
@@ -191,17 +142,12 @@ const OurGroup = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16 animate-slideUp">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="group">
+            {teamMembers.map((member, index) => <div key={index} className="group">
                 <div className="card p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
                   {/* Member Image */}
                   <div className="relative mb-8">
                     <div className="w-56 h-56 mx-auto rounded-3xl overflow-hidden shadow-large">
-                      <img 
-                        src={member.image} 
-                        alt={member.name}
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                     </div>
                     <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
                       <div className="bg-gradient-to-r from-accent to-primary rounded-2xl p-3 shadow-medium">
@@ -235,8 +181,7 @@ const OurGroup = () => {
                   <div className="absolute top-6 right-6 w-16 h-16 bg-accent/5 rounded-2xl group-hover:bg-accent/10 transition-colors blur-sm"></div>
                   <div className="absolute bottom-6 left-6 w-12 h-12 bg-primary/5 rounded-xl group-hover:bg-primary/10 transition-colors blur-sm"></div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
 
           {/* Leadership Message */}
@@ -267,8 +212,6 @@ const OurGroup = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OurGroup;
