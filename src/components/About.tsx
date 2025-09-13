@@ -1,222 +1,153 @@
-import { Building2, CheckCircle, Target, Users, Award, Globe, Factory, Lightbulb, Leaf, Phone, Mail, MapPin } from 'lucide-react';
+import { Target, Eye, Users, Globe, Award, Clock } from 'lucide-react';
+import { withBase } from '@/lib/utils';
 
 const About = () => {
-  const teamMembers = [
-    {
-      name: "SUMIT GOEL",
-      position: "Founding Director"
-    },
-    {
-      name: "SUBHASH KR BOOBNA",
-      position: "Director"
-    },
-    {
-      name: "ASHISH BOOBNA",
-      position: "Director"
-    },
-    {
-      name: "SHASWAT KAMALIA",
-      position: "Director"
-    }
-  ];
-
-  const clients = [
-    "Anmol", "Bikaji", "Haldiram's", "Hero Cycles", "VIP"
-  ];
-
-  const machinery = [
-    { name: "CORRUGATING LINE", company: "XINGUANG", spec: "1800 mm 180 mt / min" },
-    { name: "PRINTER MACHINE", company: "XINLONGSHENG", spec: "4 colour SIZE-1200x2600" },
-    { name: "GLUER MACHINE", company: "DONGGUANG NORTH PACK", spec: "QINGFENG QF-2600" },
-    { name: "GENERATOR - DG SET", company: "JAKSON LIMITED", spec: "250 kVA" },
-    { name: "FORKLIFT", company: "TOYOTA", spec: "3 TON" }
-  ];
-
   return (
     <section id="about" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
-        {/* Company Story */}
-        <div className="mb-20 animate-slideUp">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Company Story</h3>
+        {/* Section Header */}
+        <div className="text-center mb-16 animate-fadeIn">
+          <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full mb-6">
+            <span className="text-accent text-sm font-semibold tracking-wide">
+              Our Story
+            </span>
           </div>
-          <div className="card p-10 max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-10 items-center">
-              <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  India's growing demand for consumer products has led to an influx of companies in Bihar. 
-                  However, finding reliable local suppliers and manufacturers remains a challenge. Our story starts here.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Our group has made a huge impact in packaging industry with our manual and fully-automatic 
-                  corrugated box units in Rajasthan and Bihar for the last 25 years.
-                </p>
-              </div>
-              <div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Given the advent of new manufacturing industries in Bihar and to support our government's 
-                  initiative "Make in India", there is a perfect opportunity for us to capitalize on this 
-                  situation and offer you the best service. To contribute to this era of change, Ganpati 
-                  Coroplast Pvt. Ltd., a fully automated, high-tech corrugated box unit, was established 
-                  in the heart of Bihar—Patna. Our aim is to leverage our experience to support the growth 
-                  of these emerging industries.
-                </p>
-              </div>
-            </div>
-          </div>
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
+            About Balaji Group
+          </h2>
+          <p className="text-xl text-off-white max-w-3xl mx-auto leading-relaxed">
+            A house of professionals dealing in paper and paper products with over 2 decades of experience
+          </p>
         </div>
 
-        {/* Mission - Smart Art Format */}
-        <div className="mb-20 animate-fadeIn">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-6">Mission</h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              At Ganpati Coroplast, we are driven by a clear set of goals that guide our every endeavor 
-              and shape our vision for the future. These goals encapsulate our commitment to excellence, 
-              innovation, sustainability, and customer satisfaction.
-            </p>
-          </div>
-          
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="card p-8 text-center group hover:shadow-large transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <Award className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-heading font-bold text-primary mb-4">Excellence in Quality</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                We strive for nothing short of excellence in every aspect of our operations. From material 
-                selection to manufacturing processes, we are dedicated to maintaining the highest standards 
-                of quality to ensure that our products meet and exceed the expectations of our clients.
-              </p>
-            </div>
-
-            <div className="card p-8 text-center group hover:shadow-large transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <Lightbulb className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-heading font-bold text-primary mb-4">Continuous Innovation</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                Innovation is at the heart of everything we do. We are committed to staying ahead of industry 
-                trends, embracing new technologies, and exploring innovative solutions to enhance our products, 
-                processes, and services, ensuring that we remain at the forefront of the packaging industry.
-              </p>
-            </div>
-
-            <div className="card p-8 text-center group hover:shadow-large transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                <Leaf className="w-8 h-8 text-white" />
-              </div>
-              <h4 className="text-xl font-heading font-bold text-primary mb-4">Sustainability</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                Environmental responsibility is a core pillar of our business philosophy. We are committed to 
-                reducing our environmental footprint by implementing sustainable practices throughout our supply 
-                chain, from sourcing eco-friendly materials to minimizing waste and energy consumption.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-        {/* Plant & Machinery */}
-        <div className="mb-20 animate-fadeIn">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Plant & Machinery</h3>
-          </div>
-          <div className="card p-8 max-w-6xl mx-auto overflow-x-auto">
-            <div className="min-w-full">
-              <div className="grid grid-cols-3 gap-4 mb-4 font-semibold text-primary bg-accent/10 p-4 rounded-lg">
-                <div>Machine Name</div>
-                <div>Company Name</div>
-                <div>Specification</div>
-              </div>
-              {machinery.map((machine, index) => (
-                <div key={index} className="grid grid-cols-3 gap-4 p-4 border-b border-border">
-                  <div className="text-muted-foreground">{machine.name}</div>
-                  <div className="text-muted-foreground">{machine.company}</div>
-                  <div className="text-muted-foreground">{machine.spec}</div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20 animate-slideUp">
+          {/* Left side - Vision & Mission */}
+          <div className="space-y-12">
+            {/* Vision */}
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-accent to-primary rounded-2xl flex items-center justify-center mr-4 shadow-medium">
+                  <Eye className="w-7 h-7 text-primary-foreground" />
                 </div>
-              ))}
+                <h3 className="text-2xl font-heading font-bold text-primary">Vision</h3>
+              </div>
+              <p className="text-lg text-foreground leading-relaxed pl-18">
+                To create a seamless ecosystem and be a one-stop solution for all your kraft paper needs. 
+                Our vision is to be the go-to partner for businesses seeking reliable kraft paper solutions.
+              </p>
+            </div>
+
+            {/* Mission */}
+            <div>
+              <div className="flex items-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary to-card rounded-2xl flex items-center justify-center mr-4 shadow-medium">
+                  <Target className="w-7 h-7 text-primary-foreground" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-primary">Mission</h3>
+              </div>
+              <p className="text-lg text-foreground leading-relaxed pl-18">
+                To be the leading provider of high-quality kraft paper, connecting mill owners, distributors, 
+                and end-users across industries. We strive to deliver sustainable solutions that enhance 
+                packaging, printing, and other applications.
+              </p>
+            </div>
+          </div>
+
+          {/* Right side - Founder */}
+          <div className="relative">
+            <div className="bg-background rounded-3xl p-8 shadow-large card">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent/10 to-transparent rounded-full blur-2xl"></div>
+              <div className="relative z-10">
+                <div className="w-56 h-56 mx-auto mb-8 rounded-3xl overflow-hidden shadow-large">
+                  <img 
+                    src={withBase('/lovable-uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png')} 
+                    alt="Sumit Goel - Founding Director" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="text-center">
+                  <h3 className="text-2xl font-heading font-bold text-primary mb-2">SUMIT GOEL</h3>
+                  <p className="text-accent font-semibold mb-6 text-lg">Founding Director</p>
+                  <div className="w-20 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6 rounded-full"></div>
+                  <p className="text-off-white leading-relaxed">
+                    Leading Balaji Group with a vision to revolutionize the packaging industry through 
+                    innovation, quality, and customer-centric solutions.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Quality Policy */}
-        <div className="mb-20 animate-slideUp">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Quality Policy</h3>
-            <p className="text-lg text-accent font-semibold italic max-w-4xl mx-auto mb-8">
-              "Quality is never an accident. It is always the result of intelligent effort" - John Ruskin
-            </p>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
-            <div className="card p-8">
-              <p className="text-muted-foreground leading-relaxed">
-                Reduction and optimization of product cost is the most sought-after element for both supplier 
-                and customer but not at the expense of quality. We follow very stringent quality norms right 
-                from incoming raw material, work in process to finished product without any hesitation to 
-                scrap material not conforming to standards. We do not just believe but make it happen by 
-                learning at every step from our mistakes.
+        {/* Company Overview */}
+        <div className="bg-background rounded-3xl p-10 mb-16 shadow-large card animate-fadeIn">
+          <h3 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
+            Company Overview
+          </h3>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <p className="text-off-white leading-relaxed mb-6">
+                Balaji Paper Mart (Established in 2004) is a trusted name in the trade of <strong className="text-primary">Kraft paper and Duplex Board</strong>. 
+                With a legacy spanning over <strong className="text-primary">two decades</strong>, the company has become a prominent player in the Kraft paper 
+                trading industry, recognized for its quality products and dependable service.
+              </p>
+              <p className="text-off-white leading-relaxed">
+                Based in Jaipur, Balaji Paper Mart caters to clients in <strong className="text-primary">Rajasthan, Western Uttar Pradesh (UP), 
+                Himachal Pradesh, Bihar, and the National Capital Region (NCR)</strong>. Its reach reflects a robust 
+                distribution network and a dedication to meeting the diverse needs of businesses across these regions.
               </p>
             </div>
-            <div className="card p-8">
-              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Quality Check Equipment</h4>
-              <ul className="space-y-3 text-muted-foreground">
+            <div>
+              <h4 className="text-xl font-heading font-semibold text-primary mb-6">Our Product Profile:</h4>
+              <ul className="space-y-3 text-foreground">
                 <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Burst factor and Bursting strength tester
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
+                  Kraft paper & Duplex board
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Fully Automatic Box Compression
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
+                  Corrugated rolls, sheets and boxes
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Box weighing digital scale
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Moisture Meter
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  COBB Tester
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Caliper Thickness Gauge
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Fully Automatic Computerized Model Crush Tester
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="w-4 h-4 text-accent mr-3" />
-                  Digital GSM Tester
+                  <div className="w-3 h-3 bg-gradient-to-r from-accent to-secondary rounded-full mr-4"></div>
+                  Duplex/E-flute mono cartons
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Our Clients */}
-        <div className="mb-20 animate-fadeIn">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Our Clients</h3>
-            <p className="text-lg text-muted-foreground">Trusted by Industry Leaders</p>
-          </div>
-          <div className="card p-8 max-w-4xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-              {clients.map((client, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-accent/10 to-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                    <span className="text-lg font-bold text-primary">{client}</span>
-                  </div>
-                </div>
-              ))}
+        {/* Stats */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideUp">
+          <div className="card p-6 text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Users className="w-6 h-6 text-accent" />
             </div>
+            <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-sm text-foreground font-medium">Happy Clients</div>
+          </div>
+          <div className="card p-6 text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Globe className="w-6 h-6 text-primary" />
+            </div>
+            <div className="text-3xl font-bold text-primary mb-2">5</div>
+            <div className="text-sm text-foreground font-medium">States Coverage</div>
+          </div>
+          <div className="card p-6 text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Award className="w-6 h-6 text-accent" />
+            </div>
+            <div className="text-3xl font-bold text-primary mb-2">22+</div>
+            <div className="text-sm text-foreground font-medium">Years Experience</div>
+          </div>
+          <div className="card p-6 text-center hover:shadow-large transition-shadow">
+            <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Clock className="w-6 h-6 text-primary" />
+            </div>
+            <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-sm text-foreground font-medium">Customer Support</div>
           </div>
         </div>
-
       </div>
     </section>
   );

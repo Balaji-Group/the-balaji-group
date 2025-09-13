@@ -2,25 +2,6 @@ import { Briefcase, Calendar } from 'lucide-react';
 import { withBase } from '@/lib/utils';
 
 const Team = () => {
-  const leadership = [
-    {
-      name: "SUMIT GOEL",
-      position: "Founding Director"
-    },
-    {
-      name: "SUBHASH KR BOOBNA",
-      position: "Director"
-    },
-    {
-      name: "ASHISH BOOBNA",
-      position: "Director"
-    },
-    {
-      name: "SHASWAT KAMALIA",
-      position: "Director"
-    }
-  ];
-
   const teamMembers = [
     {
       name: "DINESH GUPTA",
@@ -51,29 +32,6 @@ const Team = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Meet the dedicated professionals driving innovation and excellence in packaging solutions
           </p>
-        </div>
-
-        {/* Leadership Team */}
-        <div className="mb-16 animate-slideUp">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-heading font-bold text-primary mb-4">Leadership Team</h3>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {leadership.map((member, index) => (
-              <div key={index} className="card p-6 text-center group hover:shadow-large transition-all duration-300">
-                <div className="w-20 h-20 bg-gradient-to-r from-accent to-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Briefcase className="w-10 h-10 text-white" />
-                </div>
-                <h4 className="text-lg font-heading font-bold text-primary mb-2">{member.name}</h4>
-                <p className="text-accent font-medium">{member.position}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Team Members */}
-        <div className="text-center mb-12">
-          <h3 className="text-3xl font-heading font-bold text-primary mb-4">Key Team Members</h3>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16 animate-slideUp">
