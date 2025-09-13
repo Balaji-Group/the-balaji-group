@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import OurGroup from "./pages/OurGroup";
-import Team from "./pages/Team";
+
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Header from "@/components/Header";
@@ -28,7 +28,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/our-group" element={<OurGroup />} />
-            <Route path="/team" element={<Team />} />
+            
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
