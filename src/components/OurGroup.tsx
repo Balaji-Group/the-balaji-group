@@ -28,7 +28,7 @@ const OurGroup = () => {
     established: "2024",
     location: "Patna, Bihar",
     description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
-    partners: ["Director: Mr. Ravi Shankar", "Technical Head: Mr. Pradeep Singh"],
+    partners: ["Founding Director: Mr. Sumit Goel", "Director: Mr. Shaswat Kamalia", "Director: Mr. Ashish Boobna"],
     icon: <Factory className="w-6 h-6" />
   }, {
     name: "Laxmi Packaging",
