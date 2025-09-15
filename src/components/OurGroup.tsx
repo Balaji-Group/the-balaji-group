@@ -14,7 +14,7 @@ const OurGroup = () => {
     established: "2004",
     location: "Jaipur, Rajasthan (Multi-state operations)",
     description: "The heart and soul of Balaji Group, trading in Kraft paper and Duplex Board with wings spread in Rajasthan, Western UP, Himachal, Bihar and NCR region.",
-    partners: ["Managing Partner: Mr. Sumit Goel", "Operations Partner: Mr. Vikash Gupta"],
+    partners: ["Managing Partner: Mr. Sumit Goel"],
     icon: <Truck className="w-6 h-6" />
   }, {
     name: "Shri Balaji Packaging",
