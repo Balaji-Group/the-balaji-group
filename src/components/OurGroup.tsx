@@ -35,7 +35,7 @@ const OurGroup = () => {
     established: "Coming Soon",
     location: "Multi-location expansion",
     description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
-    partners: ["Strategic Partner: TBA", "Operations Lead: TBA"],
+    partners: ["Director: Mr. Vivek Agarwal"],
     icon: <Factory className="w-6 h-6" />
   }];
   const teamMembers = [{
