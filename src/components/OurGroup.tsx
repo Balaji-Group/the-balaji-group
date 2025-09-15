@@ -27,7 +27,7 @@ const OurGroup = () => {
     name: "Ganpati Coroplast Pvt. Ltd.",
     established: "2024",
     location: "Patna, Bihar",
-    description: "A fully automatic corrugated plant with daily production capacity of 40 tons per shift.",
+    description: "Ganpati Coroplast specialises in manufacturing high-quality carton packaging solutions with a vision to serve a variety of industries nationwide. With a focus on innovation, sustainability, and customer satisfaction, we deliver customizable packaging tailored to meet our clients' needs. Our commitment to excellence, eco-friendly practices, and exceptional service sets us apart as a trusted partner in packaging solutions.",
     partners: ["Founding Director: Mr. Sumit Goel", "Director: Mr. Shaswat Kamalia", "Director: Mr. Ashish Boobna"],
     icon: <Factory className="w-6 h-6" />
   }, {
