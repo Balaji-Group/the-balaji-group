@@ -20,7 +20,7 @@ const OurGroup = () => {
     name: "Shri Balaji Packaging",
     established: "2011",
     location: "Rajasthan, India",
-    description: "A fully automatic corrugated plant fitted with the latest state of the art production facility currently converting 10,000 tons of paper per annum into corrugated boxes.",
+    description: "A state-of-the-art fully automatic corrugated plant located in Rajasthan, equipped with cutting-edge production facilities. Our facility currently converts 10,000 tons of paper annually into premium corrugated boxes, supported by a dedicated workforce of 80 skilled employees committed to delivering exceptional quality packaging solutions.",
     partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal", "Partner: Mr. Sumit Goel", "Partner: Mrs. Smriti Goel"],
     icon: <Factory className="w-6 h-6" />
   }, {
