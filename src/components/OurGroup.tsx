@@ -21,7 +21,7 @@ const OurGroup = () => {
     established: "2011",
     location: "Rajasthan, India",
     description: "A fully automatic corrugated plant fitted with the latest state of the art production facility currently converting 10,000 tons of paper per annum into corrugated boxes.",
-    partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal"],
+    partners: ["Partner: Mr. Dinesh Gupta", "Partner: Mr. Vivek Agarwal", "Partner: Mr. Sumit Goel", "Partner: Mrs. Smriti Goel"],
     icon: <Factory className="w-6 h-6" />
   }, {
     name: "Ganpati Coroplast Pvt. Ltd.",
