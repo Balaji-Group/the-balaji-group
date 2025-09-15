@@ -7,7 +7,7 @@ const OurGroup = () => {
     established: "2002",
     location: "Rajasthan, India",
     description: "A manual corrugated plant providing customized solutions both in terms of Corrugated boxes and Mono cartoons.",
-    partners: ["Founding Director: Mr. Sumit Goel", "Director: Mr. Shaswat Kamalia", "Director: Mr. Ashish Boobna"],
+    partners: ["Founding Director: Mr. Sumit Goel"],
     icon: <Factory className="w-6 h-6" />
   }, {
     name: "Balaji Paper Mart",
