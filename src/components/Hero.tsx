@@ -26,7 +26,7 @@ const Hero = () => {
                   Explore Products <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="btn-gradient flex items-center gap-2 text-lg shadow-red border-2 border-accent">
+              <Button asChild size="lg" variant="outline" className="bg-card text-card-foreground border-2 border-accent hover:bg-accent hover:text-accent-foreground flex items-center gap-2 text-lg shadow-medium">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
