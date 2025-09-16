@@ -6,7 +6,7 @@ const OurGroup = () => {
     name: "Balaji Packaging Industries",
     established: "2002",
     location: "Rajasthan, India",
-    description: "A manual corrugated plant providing customized solutions both in terms of Corrugated boxes and Mono cartoons.",
+    description: "Our very first setup marked the beginning of our journey in packaging. Starting as a manual plant, equipped with skilled people, sustainable infrastructure, and reliable machines, we laid a strong foundation for manufacturing corrugated boxes and mono cartons. Over time, through continuous innovation and upgrades, we have mastered the art of packaging and built a reputation for delivering high-quality, customized solutions. Every product reflects our commitment to precision, sustainability, and client satisfaction. Today, we stand among the best in the market, trusted for creating packaging that combines durability, functionality, and design tailored to our customers' needs.",
     partners: ["Founding Director: Mr. Sumit Goel"],
     icon: <Factory className="w-6 h-6" />
   }, {
