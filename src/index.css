@@ -5,27 +5,27 @@
 
 @layer base {
   :root {
-    /* Vibrant Multi-Color Palette (Red Accent, Dark Blue Background) */
-    --background: 222 47% 10%;      /* Deep Navy */
-    --foreground: 220 20% 98%;      /* Near White */
-    --off-white-foreground: 220 20% 92%; /* Off-white for subtle text */
-    --primary: 212 100% 52%;        /* Vivid Blue */
-    --primary-foreground: 220 20% 98%;
-    --secondary: 192 100% 44%;      /* Teal Accent */
-    --secondary-foreground: 220 20% 98%;
-    --accent: 0 80% 60%;            /* Vibrant Red Accent */
-    --accent-foreground: 222 47% 10%;
+    /* Warm Brown & Beige Color Palette */
+    --background: 35 20% 15%;       /* Rich Dark Brown */
+    --foreground: 45 25% 95%;       /* Warm Cream White */
+    --off-white-foreground: 45 20% 88%; /* Soft Beige for subtle text */
+    --primary: 25 60% 45%;          /* Warm Brown */
+    --primary-foreground: 45 25% 95%;
+    --secondary: 40 35% 70%;        /* Light Beige */
+    --secondary-foreground: 35 20% 15%;
+    --accent: 20 70% 55%;           /* Burnt Orange Accent */
+    --accent-foreground: 45 25% 95%;
     --danger: 0 80% 60%;            /* Red */
-    --danger-foreground: 220 20% 98%;
-    --card: 222 30% 14%;            /* Card Navy */
-    --card-foreground: 220 20% 98%;
-    --popover: 222 30% 14%;
-    --popover-foreground: 220 20% 98%;
-    --muted: 222 20% 22%;
-    --muted-foreground: 220 20% 80%;
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 212 100% 52%;
+    --danger-foreground: 45 25% 95%;
+    --card: 30 25% 20%;             /* Card Brown */
+    --card-foreground: 45 25% 95%;
+    --popover: 30 25% 20%;
+    --popover-foreground: 45 25% 95%;
+    --muted: 35 15% 30%;
+    --muted-foreground: 45 20% 75%;
+    --border: 35 15% 35%;
+    --input: 35 15% 35%;
+    --ring: 25 60% 45%;
     --radius: 1.2rem;
     --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
     --shadow-glow: 0 0 24px 2px hsla(var(--accent), 0.5);
@@ -34,26 +34,26 @@
     --shadow-red: 0 4px 32px 0 hsla(var(--accent), 0.18);
   }
   [data-theme="light"] {
-    --background: 222 47% 10%;      /* Deep Navy (same as dark) */
-    --foreground: 220 20% 98%;      /* Near White */
-    --off-white-foreground: 220 20% 92%;
-    --primary: 212 100% 52%;
-    --primary-foreground: 220 20% 98%;
-    --secondary: 192 100% 44%;
-    --secondary-foreground: 220 20% 98%;
-    --accent: 0 80% 60%;
-    --accent-foreground: 220 20% 98%;
-    --card: 222 30% 14%;
-    --card-foreground: 220 20% 98%;
-    --popover: 222 30% 14%;
-    --popover-foreground: 220 20% 98%;
-    --muted: 222 20% 22%;
-    --muted-foreground: 220 20% 80%;
+    --background: 45 50% 92%;       /* Light Cream */
+    --foreground: 35 20% 15%;       /* Dark Brown Text */
+    --off-white-foreground: 35 15% 25%;
+    --primary: 25 60% 45%;          /* Warm Brown */
+    --primary-foreground: 45 25% 95%;
+    --secondary: 40 35% 70%;        /* Light Beige */
+    --secondary-foreground: 35 20% 15%;
+    --accent: 20 70% 55%;           /* Burnt Orange */
+    --accent-foreground: 45 25% 95%;
+    --card: 45 40% 88%;             /* Light Beige Card */
+    --card-foreground: 35 20% 15%;
+    --popover: 45 40% 88%;
+    --popover-foreground: 35 20% 15%;
+    --muted: 40 20% 80%;
+    --muted-foreground: 35 20% 40%;
     --destructive: 0 80% 60%;
-    --destructive-foreground: 220 20% 98%;
-    --border: 220 20% 25%;
-    --input: 220 20% 25%;
-    --ring: 212 100% 52%;
+    --destructive-foreground: 45 25% 95%;
+    --border: 35 15% 75%;
+    --input: 35 15% 75%;
+    --ring: 25 60% 45%;
     --radius: 1.2rem;
     --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
   }

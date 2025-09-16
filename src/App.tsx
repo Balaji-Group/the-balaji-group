@@ -20,7 +20,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <div className="min-h-screen grid-pattern bg-background text-foreground">
+      <div className="min-h-screen bg-background text-foreground">
         <HashRouter>
           <Header />
           <Routes>
