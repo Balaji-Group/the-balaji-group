@@ -88,7 +88,7 @@
     transition: all 0.3s cubic-bezier(.4,0,.2,1);
   }
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 60%, hsl(var(--accent)) 100%);
+    background: hsl(var(--background));
   }
   .section {
     @apply py-20 px-4 md:px-8;
@@ -170,28 +170,29 @@
     border: 2px solid hsla(var(--primary), 0.18);
   }
   .card-vibrant {
-    background: linear-gradient(120deg, hsl(var(--card)) 60%, hsl(var(--secondary)) 100%);
-    box-shadow: var(--shadow-teal), var(--shadow-glow);
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-medium);
     border-radius: var(--radius);
-    border: 2px solid hsla(var(--secondary), 0.18);
+    border: 1px solid hsl(var(--border));
     transition: transform 0.3s, box-shadow 0.3s;
   }
   .card-vibrant:hover {
-    transform: translateY(-6px) scale(1.03) rotate(-1deg);
-    box-shadow: var(--shadow-red), 0 0 32px 4px hsla(var(--accent), 0.25);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-large);
     border-color: hsl(var(--accent));
   }
   .btn-gradient {
-    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)));
-    color: hsl(var(--foreground));
-    box-shadow: 0 2px 16px 0 hsla(var(--primary), 0.18);
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-medium);
     border-radius: 999px;
     font-weight: 700;
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
   }
   .btn-gradient:hover {
-    background: linear-gradient(90deg, hsl(var(--accent)), hsl(var(--primary)), hsl(var(--secondary)));
-    box-shadow: 0 4px 32px 0 hsla(var(--accent), 0.25);
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    box-shadow: var(--shadow-large);
     transform: scale(1.05) translateY(-2px);
   }
   .section-divider {
