@@ -13,7 +13,7 @@ const OurGroup = () => {
     name: "Balaji Paper Mart",
     established: "2004",
     location: "Jaipur, Rajasthan (Multi-state operations)",
-    description: "The heart and soul of Balaji Group, trading in Kraft paper and Duplex Board with wings spread in Rajasthan, Western UP, Himachal, Bihar and NCR region.",
+    description: "A trusted name in the trade of Kraft paper and Duplex Board with a legacy spanning over two decades. The company has become a prominent player in the Kraft paper trading industry, recognized for its quality products and dependable service. Based in Jaipur, we cater to clients across Rajasthan, Western Uttar Pradesh, Himachal Pradesh, Bihar, and the National Capital Region, reflecting our robust distribution network and dedication to meeting diverse business needs. Our product profile includes Kraft paper & Duplex board, corrugated rolls, sheets and boxes, and Duplex/E-flute mono cartons.",
     partners: ["Managing Partner: Mr. Sumit Goel"],
     icon: <Truck className="w-6 h-6" />
   }, {
