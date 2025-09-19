@@ -32,9 +32,9 @@ const OurGroup = () => {
     icon: <Factory className="w-6 h-6" />
   }, {
     name: "Laxmi Packaging",
-    established: "Coming Soon",
-    location: "Multi-location expansion",
-    description: "Another feather in the cap adding value and strength to our production of corrugated boxes and Mono cartoons.",
+    established: "2007",
+    location: "India",
+    description: "Laxmi Packaging, founded in 2007, began as a modest operation focused on providing quality box solutions to the community. Overcoming initial challenges and market competition, the company steadily grew through its commitment to innovation and excellence. Today, the manufacturing unit features advanced Offset Printing, Lamination, Die Punching, Flute Laminator, and cutting machines, enabling comprehensive packaging solutions for diverse client needs. Serving over 100 clients, Laxmi Packaging has built a reputation for reliability and consistent quality. The company aims to expand into new markets, create more job opportunities, and contribute to a better future with continued support from its dedicated team and valued customers.",
     partners: ["Director: Mr. Vivek Agarwal"],
     icon: <Factory className="w-6 h-6" />
   }];
