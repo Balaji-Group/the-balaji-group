@@ -89,8 +89,8 @@ const About = () => {
           </div>
           <div className="w-full max-w-4xl mx-auto">
             <img 
-              src={withBase('/lovable-uploads/our-journey-themed.png')} 
-              alt="Timeline of Balaji Group companies from 2002 to 2024" 
+              src={withBase('/lovable-uploads/our-journey-with-laxmi.png')} 
+              alt="Timeline of Balaji Group companies including Laxmi Packaging from 2002 to 2024" 
               className="w-full h-auto object-contain rounded-xl mx-auto"
             />
           </div>
