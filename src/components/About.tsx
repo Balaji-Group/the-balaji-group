@@ -87,11 +87,11 @@ const About = () => {
               From humble beginnings to industry leadership - discover the milestones that shaped our company
             </p>
           </div>
-          <div className="w-full max-w-7xl mx-auto">
+          <div className="w-full max-w-4xl mx-auto">
             <img 
               src={withBase('/lovable-uploads/our-journey-themed.png')} 
               alt="Timeline of Balaji Group companies from 2002 to 2024" 
-              className="w-full h-auto object-contain rounded-xl"
+              className="w-full h-auto object-contain rounded-xl mx-auto"
             />
           </div>
         </div>
