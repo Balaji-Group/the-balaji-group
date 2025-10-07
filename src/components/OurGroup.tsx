@@ -50,6 +50,12 @@ const OurGroup = () => {
     image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
     joinYear: "2017",
     description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
+  }, {
+    name: "SHASWAT KAMALIA",
+    position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
+    image: withBase('/lovable-uploads/shaswat-kamalia.jpg'),
+    joinYear: "2024",
+    description: "As a founding director of Ganpati Coroplast, I am committed to driving innovation and sustainable growth in the packaging industry, delivering excellence to our clients nationwide."
   }];
   return <section id="group" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
