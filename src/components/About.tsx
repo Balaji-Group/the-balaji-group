@@ -87,11 +87,11 @@ const About = () => {
               From humble beginnings to industry leadership - discover the milestones that shaped our company
             </p>
           </div>
-          <div className="w-full max-w-4xl mx-auto">
+          <div className="w-full max-w-4xl mx-auto bg-[#8b8578] p-8 rounded-xl">
             <img 
-              src={withBase('/lovable-uploads/our-journey-consistent-design.png')} 
+              src={withBase('/lovable-uploads/our-journey-final.png')} 
               alt="Timeline of Balaji Group companies from 2002 to 2024 including Laxmi Packaging" 
-              className="w-full h-auto object-contain rounded-xl mx-auto"
+              className="w-full h-auto object-contain mx-auto"
             />
           </div>
         </div>
