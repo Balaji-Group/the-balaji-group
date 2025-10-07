@@ -55,7 +55,7 @@ const OurGroup = () => {
     position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
     image: withBase('/lovable-uploads/shaswat-kamalia.jpg'),
     joinYear: "2024",
-    description: "As a founding director of Ganpati Coroplast, I am committed to driving innovation and sustainable growth in the packaging industry, delivering excellence to our clients nationwide."
+    description: "As a young director in the packaging world, I'm focused on bringing fresh energy and practical ideas to make a real difference."
   }];
   return <section id="group" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
