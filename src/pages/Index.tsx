@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import QualityPolicy from '@/components/QualityPolicy';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -8,6 +9,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <QualityPolicy />
       </main>
       <Footer />
     </div>
