@@ -153,9 +153,9 @@ const OurGroup = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16 animate-slideUp">
-            {teamMembers.map((member, index) => <div key={index} className="group">
-                <div className="card p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16 animate-slideUp">
+            {teamMembers.map((member, index) => <div key={index} className="group h-full">
+                <div className="card p-8 shadow-large hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 h-full flex flex-col">
                   {/* Member Image */}
                   <div className="relative mb-8">
                     <div className="w-56 h-56 mx-auto rounded-3xl overflow-hidden shadow-large">
@@ -169,7 +169,7 @@ const OurGroup = () => {
                   </div>
 
                   {/* Member Info */}
-                  <div className="text-center">
+                  <div className="text-center flex-1 flex flex-col">
                     <h4 className="text-2xl font-heading font-bold text-primary mb-2">
                       {member.name}
                     </h4>
@@ -184,7 +184,7 @@ const OurGroup = () => {
 
                     <div className="w-20 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6 rounded-full"></div>
                     
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed flex-1">
                       {member.description}
                     </p>
                   </div>
