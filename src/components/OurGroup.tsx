@@ -56,12 +56,6 @@ const OurGroup = () => {
     image: withBase('/lovable-uploads/shaswat-kamalia.jpg'),
     joinYear: "2024",
     description: "As a young director in the packaging world, I'm focused on bringing fresh energy and practical ideas to make a real difference."
-  }, {
-    name: "ASHISH BOOBNA",
-    position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
-    image: withBase('/lovable-uploads/ashish-boobna.jpg'),
-    joinYear: "2024",
-    description: "Running daily operations has taught me that genuinely listening to challenges and always trying to improve, even in small ways, is what keeps our business moving forward."
   }];
   return <section id="group" className="section fade-in bg-background">
       <div className="container mx-auto px-4">
