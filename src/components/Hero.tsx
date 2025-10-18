@@ -14,8 +14,8 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-primary animate-fadeIn pop-in">
                 Complete Packaging Solutions
               </h1>
-              <p className="text-2xl font-bold text-primary animate-slideUp pop-in">
-                Your trusted partner in innovative packaging since 2002
+              <p className="text-2xl font-bold text-white animate-slideUp pop-in">
+                Your trusted partner in <span className="text-accent">innovative</span> packaging since <span className="text-secondary">2002</span>
               </p>
             </div>
             <div className="flex flex-wrap gap-6 pt-2 animate-fadeIn">
