@@ -11,9 +11,8 @@ const Hero = () => {
           {/* Left Column - Text Content */}
           <div className="space-y-10 fade-in">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-white drop-shadow-xl animate-fadeIn pop-in"
-                  style={{ textShadow: '0 4px 24px rgba(0,0,0,0.35), 0 1px 0 #222' }}>
-                <span className="rainbow">Complete</span> <span className="text-accent">Packaging</span> <span className="text-secondary">Solutions</span>
+              <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-primary animate-fadeIn pop-in">
+                Complete Packaging Solutions
               </h1>
               <p className="text-2xl font-bold text-white animate-slideUp pop-in"
                  style={{ textShadow: '0 2px 12px rgba(0,0,0,0.25), 0 1px 0 #222' }}>
