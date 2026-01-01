@@ -12,6 +12,9 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Header from "@/components/Header";
 import ContactPopup from "@/components/ContactPopup";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
+import CookiePolicy from "@/pages/CookiePolicy";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +33,9 @@ const App = () => (
             <Route path="/products" element={<Products />} />
             <Route path="/our-group" element={<OurGroup />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </HashRouter>

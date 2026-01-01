@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-off-white text-sm leading-relaxed mb-6">
-              Since 2002, delivering innovative packaging solutions across India and abroad 
+              Since 2002, delivering innovative packaging solutions across India and abroad
               with quality, innovation, and customer satisfaction at our core.
             </p>
             <div className="flex space-x-4">
@@ -55,7 +56,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 'Mono Cartons',
-                'Self-lock Trays', 
+                'Self-lock Trays',
                 'Display Cartons',
                 'Telescope Boxes',
                 'RSC Containers',
@@ -97,9 +98,9 @@ const Footer = () => {
             © 2024 Balaji Group. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-off-white hover:text-accent text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="text-off-white hover:text-accent text-sm transition-colors">Terms of Service</a>
-            <a href="#" className="text-off-white hover:text-accent text-sm transition-colors">Cookie Policy</a>
+            <Link to="/privacy-policy" className="text-off-white hover:text-accent text-sm transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="text-off-white hover:text-accent text-sm transition-colors">Terms of Service</Link>
+            <Link to="/cookie-policy" className="text-off-white hover:text-accent text-sm transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>
