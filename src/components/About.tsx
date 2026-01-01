@@ -1,5 +1,8 @@
 import { Target, Eye, Users, Globe, Award, Clock } from 'lucide-react';
 import { withBase } from '@/lib/utils';
+import Timeline from '@/components/Timeline';
+import CoreValues from '@/components/CoreValues';
+import NetworkCoverage from '@/components/NetworkCoverage';
 
 const About = () => {
   return (
@@ -32,7 +35,7 @@ const About = () => {
                 <h3 className="text-2xl font-heading font-bold text-primary">Vision</h3>
               </div>
               <p className="text-lg text-foreground leading-relaxed pl-18">
-                To create a seamless ecosystem and be a one-stop solution for all your kraft paper needs. 
+                To create a seamless ecosystem and be a one-stop solution for all your kraft paper needs.
                 Our vision is to be the go-to partner for businesses seeking reliable kraft paper solutions.
               </p>
             </div>
@@ -46,8 +49,8 @@ const About = () => {
                 <h3 className="text-2xl font-heading font-bold text-primary">Mission</h3>
               </div>
               <p className="text-lg text-foreground leading-relaxed pl-18">
-                To be the leading provider of high-quality kraft paper, connecting mill owners, distributors, 
-                and end-users across industries. We strive to deliver sustainable solutions that enhance 
+                To be the leading provider of high-quality kraft paper, connecting mill owners, distributors,
+                and end-users across industries. We strive to deliver sustainable solutions that enhance
                 packaging, printing, and other applications.
               </p>
             </div>
@@ -59,9 +62,9 @@ const About = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent/10 to-transparent rounded-full blur-2xl"></div>
               <div className="relative z-10">
                 <div className="w-56 h-56 mx-auto mb-8 rounded-3xl overflow-hidden shadow-large">
-                  <img 
-                    src={withBase('/lovable-uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png')} 
-                    alt="Sumit Goel - Founding Director" 
+                  <img
+                    src={withBase('/lovable-uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png')}
+                    alt="Sumit Goel - Founding Director"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -70,7 +73,7 @@ const About = () => {
                   <p className="text-accent font-semibold mb-6 text-lg">Founding Director</p>
                   <div className="w-20 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6 rounded-full"></div>
                   <p className="text-off-white leading-relaxed">
-                    Leading Balaji Group with a vision to revolutionize the packaging industry through 
+                    Leading Balaji Group with a vision to revolutionize the packaging industry through
                     innovation, quality, and customer-centric solutions.
                   </p>
                 </div>
@@ -79,7 +82,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Our Journey Section */}
+        {/* Our Journey Section - Interactive Timeline */}
         <div className="mb-20 animate-fadeIn">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-heading font-bold text-primary mb-4">Our Journey</h3>
@@ -87,18 +90,11 @@ const About = () => {
               From humble beginnings to industry leadership - discover the milestones that shaped our company
             </p>
           </div>
-          <div className="w-full max-w-4xl mx-auto bg-[#8b8578] p-8 rounded-xl">
-            <img 
-              src={withBase('/lovable-uploads/our-journey-final.png')} 
-              alt="Timeline of Balaji Group companies from 2002 to 2024 including Laxmi Packaging" 
-              className="w-full h-auto object-contain mx-auto"
-            />
-          </div>
+          <Timeline />
         </div>
 
-
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideUp">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 animate-slideUp mb-20">
           <div className="card p-6 text-center hover:shadow-large transition-shadow">
             <div className="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
               <Users className="w-6 h-6 text-accent" />
@@ -129,6 +125,12 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Core Values Section */}
+      <CoreValues />
+
+      {/* Network Coverage Section */}
+      <NetworkCoverage />
     </section>
   );
 };

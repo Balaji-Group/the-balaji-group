@@ -8,10 +8,10 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import OurGroup from "./pages/OurGroup";
-
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Header from "@/components/Header";
+import ContactPopup from "@/components/ContactPopup";
 
 const queryClient = new QueryClient();
 
@@ -23,12 +23,12 @@ const App = () => (
       <div className="min-h-screen bg-background text-foreground">
         <HashRouter>
           <Header />
+          <ContactPopup />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
             <Route path="/our-group" element={<OurGroup />} />
-            
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
