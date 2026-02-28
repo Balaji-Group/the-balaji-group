@@ -14,7 +14,7 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-heading font-extrabold text-primary animate-fadeIn pop-in">
                 Complete Packaging Solutions
               </h1>
-              <p className="text-2xl font-bold text-white animate-slideUp pop-in">
+              <p className="text-2xl font-bold text-foreground animate-slideUp pop-in">
                 Your trusted partner in <span className="text-accent">innovative</span> packaging since <span className="text-secondary">2002</span>
               </p>
             </div>
@@ -57,10 +57,10 @@ const Hero = () => {
                 <img 
                   src={withBase('/lovable-uploads/ba221d04-027b-4395-8649-77287da49d97.png')} 
                   alt="Balaji Group Logo" 
-                  className="h-44 w-auto mx-auto filter drop-shadow-xl animate-bounce"
+                  className="h-44 w-auto mx-auto filter drop-shadow-xl"
                 />
               </div>
-              <h3 className="text-4xl font-heading font-extrabold text-white mb-2 tracking-wide animate-fadeIn">
+              <h3 className="text-4xl font-heading font-extrabold text-primary mb-2 tracking-wide animate-fadeIn">
                 BALAJI GROUP
               </h3>
               <p className="text-accent font-semibold text-xl tracking-wide animate-slideUp">
