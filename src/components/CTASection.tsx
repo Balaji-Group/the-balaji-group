@@ -20,13 +20,13 @@ const CTASection = () => {
                     </div>
 
                     {/* Heading */}
-                    <h2 className="text-4xl lg:text-5xl font-heading font-bold text-white mb-6 leading-tight">
+                    <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-6 leading-tight">
                         Let's Create Your Perfect
                         <span className="text-accent block mt-2">Packaging Solution</span>
                     </h2>
 
                     {/* Description */}
-                    <p className="text-xl text-off-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
                         From concept to delivery, our team is ready to help you design packaging
                         that protects your products and elevates your brand.
                     </p>
@@ -46,7 +46,7 @@ const CTASection = () => {
                             asChild
                             size="lg"
                             variant="outline"
-                            className="border-2 border-white/30 text-white hover:bg-white/10 font-semibold text-lg h-14 px-8"
+                            className="border-2 border-foreground/30 text-foreground hover:bg-foreground/10 font-semibold text-lg h-14 px-8"
                         >
                             <Link to="/products">
                                 Explore Products
@@ -55,12 +55,12 @@ const CTASection = () => {
                     </div>
 
                     {/* Quick Contact */}
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-white/80">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-foreground/80">
                         <a
                             href="tel:+919829069467"
                             className="flex items-center gap-3 hover:text-accent transition-colors"
                         >
-                            <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                            <div className="w-10 h-10 bg-foreground/10 rounded-full flex items-center justify-center">
                                 <Phone className="w-5 h-5" />
                             </div>
                             <span className="font-medium">+91 9829069467</span>
@@ -69,7 +69,7 @@ const CTASection = () => {
                             href="mailto:sumit@thebalajigroup.in"
                             className="flex items-center gap-3 hover:text-accent transition-colors"
                         >
-                            <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                            <div className="w-10 h-10 bg-foreground/10 rounded-full flex items-center justify-center">
                                 <Mail className="w-5 h-5" />
                             </div>
                             <span className="font-medium">sumit@thebalajigroup.in</span>
