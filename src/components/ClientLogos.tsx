@@ -20,6 +20,9 @@ const ClientLogos = () => {
         { src: withBase('/Clients/11.png'), alt: 'Client 11' },
         { src: withBase('/Clients/12.png'), alt: 'Client 12' },
         { src: withBase('/Clients/13.png'), alt: 'Client 13' },
+        { src: withBase('/Clients/14.png'), alt: 'Parle' },
+        { src: withBase('/Clients/15.png'), alt: 'Baidyanath' },
+        { src: withBase('/Clients/16.png'), alt: 'Allwyn' },
     ];
 
     useEffect(() => {
