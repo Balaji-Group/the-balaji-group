@@ -24,7 +24,7 @@ const Footer = () => {
               with quality, innovation, and customer satisfaction at our core.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/the-balaji-group-jaipur" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
+              <a href="https://www.linkedin.com/company/the-balaji-group-jaipur/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BjCdTwNJATfCQyjjNxJqZuQ%3D%3D" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
                 <Linkedin className="w-4 h-4 text-foreground" />
               </a>
               <div className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
