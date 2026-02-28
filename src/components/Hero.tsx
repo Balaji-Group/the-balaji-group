@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Package, Shield, Award, Users, Star, Zap } from 'lucide-react';
+import { ArrowRight, Package, Shield, Award, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { withBase } from '@/lib/utils';
 
