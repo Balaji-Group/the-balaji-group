@@ -1,7 +1,7 @@
 import {
     CheckCircle,
     Shield,
-    Zap,
+    
     Leaf,
     Clock,
     HeartHandshake,

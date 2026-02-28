@@ -10,7 +10,7 @@ import {
     Pill,
     UtensilsCrossed,
     Home,
-    Wrench,
+    
     Gift,
     ChevronLeft,
     ChevronRight
