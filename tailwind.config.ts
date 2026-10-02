@@ -112,8 +112,8 @@ export default {
 				'slide-up': 'slide-up 0.6s ease-out'
 			},
 			fontFamily: {
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
-				'heading': ['Poppins', 'system-ui', 'sans-serif'],
+				'sans': ['Manrope', 'sans-serif'],
+				'heading': ['Barlow Condensed', 'sans-serif'],
 			},
 			boxShadow: {
 				'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',

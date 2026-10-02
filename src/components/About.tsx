@@ -15,9 +15,9 @@ const About = () => {
               Our Story
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
+              <h1 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             About Balaji Group
-          </h2>
+              </h1>
           <p className="text-xl text-off-white max-w-3xl mx-auto leading-relaxed">
             A house of professionals dealing in paper and paper products with over 2 decades of experience
           </p>

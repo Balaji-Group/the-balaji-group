@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -8,31 +8,21 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-sm flex items-center justify-center">
-                <div className="w-6 h-6 bg-secondary rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-lg font-heading font-bold text-primary">BALAJI GROUP</h3>
-                <p className="text-xs text-off-white">A Complete House of Packaging</p>
-              </div>
-            </div>
+            <Link to="/" className="site-brand footer-brand">
+              <span className="brand-mark" aria-hidden="true">B</span>
+              <span className="site-brand-copy">
+                <span className="site-brand-name">The Balaji Group</span>
+                <span className="site-brand-caption">Packaging since 2002</span>
+              </span>
+            </Link>
             <p className="text-off-white text-sm leading-relaxed mb-6">
               Since 2002, delivering innovative packaging solutions across India and abroad
               with quality, innovation, and customer satisfaction at our core.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/company/the-balaji-group-jaipur/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BjCdTwNJATfCQyjjNxJqZuQ%3D%3D" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
+            <div className="flex">
+              <a aria-label="The Balaji Group on LinkedIn" href="https://www.linkedin.com/company/the-balaji-group-jaipur/" target="_blank" rel="noopener noreferrer" className="footer-social-link">
                 <Linkedin className="w-4 h-4 text-foreground" />
-              </a>
-              <div className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
-                <Twitter className="w-4 h-4 text-foreground" />
-              </div>
-              <div className="w-8 h-8 bg-card rounded-lg flex items-center justify-center hover:bg-secondary transition-colors cursor-pointer">
-                <Facebook className="w-4 h-4 text-foreground" />
-              </div>
+                  </a>
             </div>
           </div>
 
@@ -40,11 +30,17 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6 text-primary">Quick Links</h4>
             <ul className="space-y-3">
-              {['Home', 'About Us', 'Our Group', 'Team', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(' ', '')}`} className="text-off-white hover:text-accent transition-colors text-sm">
-                    {link}
-                  </a>
+              {[
+                { label: 'Home', to: '/' },
+                { label: 'About', to: '/about' },
+                { label: 'Companies', to: '/our-group' },
+                { label: 'Products', to: '/products' },
+                { label: 'Contact', to: '/contact' },
+              ].map((item) => (
+                <li key={item.to}>
+                  <Link to={item.to} className="footer-link">
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -75,11 +71,11 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-off-white text-sm">+91 9829069467</span>
+                <a className="footer-contact-link" href="tel:+919829069467">+91 9829069467</a>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                <span className="text-off-white text-sm">sumit@thebalajigroup.in</span>
+                <a className="footer-contact-link" href="mailto:sumit@thebalajigroup.in">sumit@thebalajigroup.in</a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
@@ -95,7 +91,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-off-white text-sm">
-            © 2024 Balaji Group. All rights reserved.
+            © {new Date().getFullYear()} Balaji Group. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy-policy" className="text-off-white hover:text-accent text-sm transition-colors">Privacy Policy</Link>

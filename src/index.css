@@ -1,61 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Light Corrugated Box Color Palette */
-    --background: 35 25% 92%;       /* Light Kraft Paper */
-    --foreground: 25 30% 25%;       /* Dark Brown Text */
-    --off-white-foreground: 25 25% 35%; /* Medium Brown for subtle text */
-    --primary: 28 40% 55%;          /* Natural Cardboard Brown */
-    --primary-foreground: 35 25% 95%;
-    --secondary: 35 30% 75%;        /* Light Tan */
-    --secondary-foreground: 25 30% 25%;
-    --accent: 25 45% 45%;           /* Darker Kraft Brown */
-    --accent-foreground: 35 25% 95%;
-    --danger: 0 70% 50%;            /* Muted Red */
-    --danger-foreground: 35 25% 95%;
-    --card: 35 20% 88%;             /* Light Card Brown */
-    --card-foreground: 25 30% 25%;
-    --popover: 35 20% 88%;
-    --popover-foreground: 25 30% 25%;
-    --muted: 35 15% 80%;
-    --muted-foreground: 25 25% 50%;
-    --border: 30 20% 75%;
-    --input: 30 20% 85%;
-    --ring: 28 40% 55%;
-    --radius: 1.2rem;
-    --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
-    --shadow-glow: 0 0 24px 2px hsla(var(--accent), 0.5);
-    --shadow-blue: 0 4px 32px 0 hsla(var(--primary), 0.25);
-    --shadow-teal: 0 4px 32px 0 hsla(var(--secondary), 0.18);
-    --shadow-red: 0 4px 32px 0 hsla(var(--accent), 0.18);
+    --background: 0 0% 100%;
+    --foreground: 218 27% 15%;
+    --off-white-foreground: 218 13% 40%;
+    --primary: 218 48% 17%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 78% 49%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 354 75% 48%;
+    --accent-foreground: 0 0% 100%;
+    --danger: 354 75% 48%;
+    --danger-foreground: 0 0% 100%;
+    --card: 210 24% 98%;
+    --card-foreground: 218 27% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 27% 15%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 218 12% 42%;
+    --border: 214 20% 87%;
+    --input: 214 20% 87%;
+    --ring: 222 78% 49%;
+    --radius: 0.5rem;
+    --shadow: 0 12px 32px rgba(20, 34, 56, 0.08);
+    --shadow-glow: 0 8px 24px rgba(30, 72, 207, 0.16);
+    --shadow-blue: 0 8px 28px rgba(30, 72, 207, 0.12);
+    --shadow-teal: 0 8px 28px rgba(20, 34, 56, 0.08);
+    --shadow-red: 0 8px 28px rgba(198, 35, 58, 0.12);
   }
   [data-theme="light"] {
-    --background: 35 25% 95%;       /* Very Light Kraft */
-    --foreground: 25 30% 20%;       /* Dark Brown Text */
-    --off-white-foreground: 25 25% 30%;
-    --primary: 28 40% 50%;          /* Natural Cardboard */
-    --primary-foreground: 35 25% 95%;
-    --secondary: 35 30% 80%;        /* Very Light Tan */
-    --secondary-foreground: 25 30% 20%;
-    --accent: 25 45% 40%;           /* Medium Kraft Brown */
-    --accent-foreground: 35 25% 95%;
-    --card: 35 20% 90%;             /* Very Light Card */
-    --card-foreground: 25 30% 20%;
-    --popover: 35 20% 90%;
-    --popover-foreground: 25 30% 20%;
-    --muted: 35 15% 85%;
-    --muted-foreground: 25 25% 45%;
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 35 25% 95%;
-    --border: 30 20% 80%;
-    --input: 30 20% 87%;
-    --ring: 28 40% 50%;
-    --radius: 1.2rem;
-    --shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
+    --background: 0 0% 100%;
+    --foreground: 218 27% 15%;
+    --off-white-foreground: 218 13% 40%;
+    --primary: 218 48% 17%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 78% 49%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 354 75% 48%;
+    --accent-foreground: 0 0% 100%;
+    --card: 210 24% 98%;
+    --card-foreground: 218 27% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 27% 15%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 218 12% 42%;
+    --destructive: 354 75% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 20% 87%;
+    --input: 214 20% 87%;
+    --ring: 222 78% 49%;
+    --radius: 0.5rem;
+    --shadow: 0 12px 32px rgba(20, 34, 56, 0.08);
   }
 }
 
@@ -68,11 +67,9 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
     min-height: 100vh;
-    letter-spacing: 0.01em;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold tracking-tight;
-    letter-spacing: 0.01em;
+    @apply font-heading font-bold;
   }
 }
 
@@ -97,39 +94,35 @@
     margin-right: auto;
   }
   .card {
-    @apply bg-card text-card-foreground rounded-2xl shadow-lg border border-border;
+    @apply bg-card text-card-foreground rounded-lg border border-border;
     box-shadow: var(--shadow);
-    transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
+    transition: box-shadow 0.2s ease;
   }
   .card:hover {
-    transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
+    box-shadow: 0 16px 36px rgba(20, 34, 56, 0.12);
   }
   .btn-primary {
-    @apply bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full shadow-md;
-    transition: background 0.2s, transform 0.2s;
+    @apply bg-primary text-primary-foreground font-bold px-6 py-3 rounded-md shadow-sm;
+    transition: background 0.2s ease;
   }
   .btn-primary:hover {
     background: hsl(var(--accent));
-    transform: scale(1.04);
   }
   .btn-secondary {
-    @apply border border-primary text-primary bg-transparent px-6 py-3 rounded-full font-bold;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
+    @apply border border-primary text-primary bg-transparent px-6 py-3 rounded-md font-bold;
+    transition: background 0.2s ease, color 0.2s ease;
   }
   .btn-secondary:hover {
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    transform: scale(1.04);
   }
   .btn-accent {
-    @apply bg-accent text-accent-foreground px-6 py-3 rounded-full font-bold;
-    transition: background 0.2s, transform 0.2s;
+    @apply bg-accent text-accent-foreground px-6 py-3 rounded-md font-bold;
+    transition: background 0.2s ease;
   }
   .btn-accent:hover {
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    transform: scale(1.04);
   }
   .input {
     @apply bg-background border border-input rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring;
@@ -177,7 +170,7 @@
     transition: transform 0.3s, box-shadow 0.3s;
   }
   .card-vibrant:hover {
-    transform: translateY(-4px) scale(1.02);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-large);
     border-color: hsl(var(--accent));
   }
@@ -185,7 +178,7 @@
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
     box-shadow: var(--shadow-medium);
-    border-radius: 999px;
+    border-radius: 4px;
     font-weight: 700;
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
   }
@@ -193,7 +186,7 @@
     background: hsl(var(--accent));
     color: hsl(var(--accent-foreground));
     box-shadow: var(--shadow-large);
-    transform: scale(1.05) translateY(-2px);
+    transform: none;
   }
   .section-divider {
     width: 100%;

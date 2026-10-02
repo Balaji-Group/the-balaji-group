@@ -36,7 +36,7 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      const { error } = await supabase.functions.invoke('send-contact-email', {
+        const { error } = await supabase.functions.invoke('send-contact-email', {
         body: data,
       });
 
@@ -66,7 +66,7 @@ const Contact = () => {
               Get In Touch
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Contact Us</h2>
+            <h1 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Contact Us</h1>
           <p className="text-xl text-off-white max-w-3xl mx-auto">
             Ready to discuss your packaging needs? Get in touch with our team today
           </p>

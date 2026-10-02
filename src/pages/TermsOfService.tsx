@@ -1,11 +1,9 @@
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const TermsOfService = () => {
     return (
         <div className="min-h-screen bg-background text-off-white font-sans">
-            <Header />
-            <main className="pt-24 pb-16 container mx-auto px-4 max-w-4xl">
+            <main className="pt-10 pb-16 container mx-auto px-4 max-w-4xl">
                 <h1 className="text-4xl font-heading font-bold text-primary mb-8 animate-fadeIn">Terms of Service</h1>
 
                 <div className="space-y-6 text-muted-foreground animate-slideUp">

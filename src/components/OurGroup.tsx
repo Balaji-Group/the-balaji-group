@@ -63,7 +63,7 @@ const OurGroup = () => {
     name: "SHASWAT KAMALIA",
     position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
     image: withBase('/uploads/shaswat-kamalia.jpg'),
-    joinYear: "2024",
+        joinYear: "2024",
     description: "As a young director in the packaging world, I'm focused on bringing fresh energy and practical ideas to make a real difference."
   }, {
     name: "SUBHASH KR BOOBNA",
@@ -87,7 +87,7 @@ const OurGroup = () => {
             Our Companies
           </span>
         </div>
-        <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Our Group</h2>
+        <h1 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">Our Group</h1>
         <p className="text-xl text-off-white max-w-3xl mx-auto mb-8">
           A diversified portfolio of companies working together to deliver comprehensive packaging solutions
         </p>

@@ -113,7 +113,7 @@ const IndustriesCarousel = () => {
     };
 
     return (
-        <section className="py-20 bg-background">
+        <section className="industries-section">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center px-4 py-2 bg-accent/10 rounded-full mb-6">

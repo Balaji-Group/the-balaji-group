@@ -18,7 +18,6 @@ export default defineConfig(() => ({
     },
   },
   build: {
-    sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
   },
