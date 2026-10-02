@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-// Prefix asset paths with the Vite base (works for GitHub Pages subpaths)
+// Prefix asset paths with the Vite base for root and subpath deployments.
 export function withBase(p: string): string {
   const base = import.meta.env.BASE_URL || "/";
   return base + p.replace(/^\//, "");

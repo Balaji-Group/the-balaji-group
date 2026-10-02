@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
-  // Use relative base so assets work when hosted under a subpath (e.g., GitHub Pages)
+  // Keep built assets relative to support IIS root and subpath deployments.
   base: './',
   server: {
     host: "::",

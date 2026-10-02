@@ -27,34 +27,6 @@
     --ring: 222 78% 49%;
     --radius: 0.5rem;
     --shadow: 0 12px 32px rgba(20, 34, 56, 0.08);
-    --shadow-glow: 0 8px 24px rgba(30, 72, 207, 0.16);
-    --shadow-blue: 0 8px 28px rgba(30, 72, 207, 0.12);
-    --shadow-teal: 0 8px 28px rgba(20, 34, 56, 0.08);
-    --shadow-red: 0 8px 28px rgba(198, 35, 58, 0.12);
-  }
-  [data-theme="light"] {
-    --background: 0 0% 100%;
-    --foreground: 218 27% 15%;
-    --off-white-foreground: 218 13% 40%;
-    --primary: 218 48% 17%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 222 78% 49%;
-    --secondary-foreground: 0 0% 100%;
-    --accent: 354 75% 48%;
-    --accent-foreground: 0 0% 100%;
-    --card: 210 24% 98%;
-    --card-foreground: 218 27% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 27% 15%;
-    --muted: 210 20% 95%;
-    --muted-foreground: 218 12% 42%;
-    --destructive: 354 75% 48%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 214 20% 87%;
-    --input: 214 20% 87%;
-    --ring: 222 78% 49%;
-    --radius: 0.5rem;
-    --shadow: 0 12px 32px rgba(20, 34, 56, 0.08);
   }
 }
 
@@ -77,16 +49,6 @@
   .text-off-white {
     color: hsl(var(--off-white-foreground));
   }
-  .glass-effect {
-    background: hsla(var(--background), 0.7);
-    backdrop-filter: blur(16px) saturate(1.2);
-    border: 1px solid hsla(var(--border), 0.18);
-    box-shadow: var(--shadow);
-    transition: all 0.3s cubic-bezier(.4,0,.2,1);
-  }
-  .gradient-bg {
-    background: hsl(var(--background));
-  }
   .section {
     @apply py-20 px-4 md:px-8;
     max-width: 1200px;
@@ -101,33 +63,6 @@
   .card:hover {
     box-shadow: 0 16px 36px rgba(20, 34, 56, 0.12);
   }
-  .btn-primary {
-    @apply bg-primary text-primary-foreground font-bold px-6 py-3 rounded-md shadow-sm;
-    transition: background 0.2s ease;
-  }
-  .btn-primary:hover {
-    background: hsl(var(--accent));
-  }
-  .btn-secondary {
-    @apply border border-primary text-primary bg-transparent px-6 py-3 rounded-md font-bold;
-    transition: background 0.2s ease, color 0.2s ease;
-  }
-  .btn-secondary:hover {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-  }
-  .btn-accent {
-    @apply bg-accent text-accent-foreground px-6 py-3 rounded-md font-bold;
-    transition: background 0.2s ease;
-  }
-  .btn-accent:hover {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-  }
-  .input {
-    @apply bg-background border border-input rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ring;
-    transition: border 0.2s, box-shadow 0.2s;
-  }
   .shadow-large {
     box-shadow: 0 8px 40px 0 rgba(0, 20, 40, 0.18);
   }
@@ -140,27 +75,11 @@
   .fade-in {
     animation: fadeIn 0.7s cubic-bezier(.4,0,.2,1);
   }
-  .slide-up {
-    animation: slideUp 0.7s cubic-bezier(.4,0,.2,1);
-  }
-  .slide-in-right {
-    animation: slideInRight 0.7s cubic-bezier(.4,0,.2,1);
-  }
-  .slide-in-left {
-    animation: slideInLeft 0.7s cubic-bezier(.4,0,.2,1);
-  }
-  .bounce {
-    animation: bounce 1s infinite;
-  }
-  .pulse {
-    animation: pulse 2s infinite;
-  }
   .glass-heavy {
     background: hsla(var(--card), 0.85);
-    box-shadow: var(--shadow-blue), var(--shadow-glow);
-    backdrop-filter: blur(24px) saturate(1.5);
+    box-shadow: var(--shadow);
     border-radius: var(--radius);
-    border: 2px solid hsla(var(--primary), 0.18);
+    border: 1px solid hsl(var(--border));
   }
   .card-vibrant {
     background: hsl(var(--card));
@@ -174,89 +93,19 @@
     box-shadow: var(--shadow-large);
     border-color: hsl(var(--accent));
   }
-  .btn-gradient {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    box-shadow: var(--shadow-medium);
-    border-radius: 4px;
-    font-weight: 700;
-    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
-  }
-  .btn-gradient:hover {
-    background: hsl(var(--accent));
-    color: hsl(var(--accent-foreground));
-    box-shadow: var(--shadow-large);
-    transform: none;
-  }
-  .section-divider {
-    width: 100%;
-    height: 60px;
-    background: url('/svg/wave-divider.svg') repeat-x bottom;
-    background-size: cover;
-    margin-bottom: -1px;
-  }
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-  .shadow-blue {
-    box-shadow: var(--shadow-blue);
-  }
-  .shadow-teal {
-    box-shadow: var(--shadow-teal);
-  }
-  .shadow-red {
-    box-shadow: var(--shadow-red);
-  }
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-@keyframes slideUp {
-  from { transform: translateY(32px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-@keyframes slideInRight {
-  from { transform: translateX(32px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-@keyframes slideInLeft {
-  from { transform: translateX(-32px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.04); }
-  100% { transform: scale(1); }
-}
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-16px); }
-  100% { transform: translateY(0); }
-}
 @keyframes popIn {
   0% { opacity: 0; transform: scale(0.8); }
   100% { opacity: 1; transform: scale(1); }
 }
-@keyframes rainbow {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .gradient-bg {
-    background: hsl(var(--background));
-  }
-  .glass-effect {
-    backdrop-filter: none;
-    background: hsl(var(--card));
-  }
   .section {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -265,23 +114,6 @@
   }
 }
 
-/* Responsive Design tweaks for heavy look */
-@media (min-width: 1024px) {
-  .card-vibrant, .glass-heavy {
-    box-shadow: 0 8px 48px 0 rgba(0, 20, 40, 0.22), 0 0 32px 4px hsla(var(--accent), 0.18);
-  }
-}
-
-.float {
-  animation: float 3s ease-in-out infinite;
-}
 .pop-in {
   animation: popIn 0.7s cubic-bezier(.4,0,.2,1);
 }
-.rainbow {
-  animation: rainbow 4s linear infinite;
-}
-
-/* Remove dotted-pattern and grid-pattern backgrounds */
-/* .dotted-pattern { background: none !important; } */
-/* .grid-pattern { background: none !important; } */
