@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
+import GroupJourney from '@/components/GroupJourney';
+import IndustryTags from '@/components/IndustryTags';
 import QualityPolicy from '@/components/QualityPolicy';
-import IndustriesCarousel from '@/components/IndustriesCarousel';
 import ClientLogos from '@/components/ClientLogos';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
@@ -11,7 +12,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <main>
         <Hero />
-        <IndustriesCarousel />
+        <GroupJourney />
+        <IndustryTags />
         <QualityPolicy />
         <ClientLogos />
         <Testimonials />

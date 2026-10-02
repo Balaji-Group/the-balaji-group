@@ -1,7 +1,11 @@
+import { useRef, type CSSProperties } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { useInView } from '@/hooks/use-scroll-fx';
 
 const QualityPolicy = () => {
+  const listRef = useRef<HTMLUListElement>(null);
+  const seen = useInView(listRef, 0.3);
   const equipment = [
     "Burst factor and Bursting strength tester",
     "Fully Automatic Box Compression",
@@ -48,9 +52,13 @@ const QualityPolicy = () => {
                 <CardDescription>Advanced testing and measurement tools</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-3">
+                <ul ref={listRef} className="space-y-3">
                   {equipment.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
+                    <li
+                      key={index}
+                      className={`flex items-start gap-3 ${seen ? 'quality-tick' : 'opacity-0'}`}
+                      style={{ '--i': index } as CSSProperties}
+                    >
                       <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
                       <span className="text-base text-foreground">{item}</span>
                     </li>

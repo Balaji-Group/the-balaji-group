@@ -3,6 +3,8 @@ import { StrictMode } from 'react'
 import App from './App.tsx'
 import './index.css'
 import './App.css'
+import './styles/craft.css'
+import './styles/pages.css'
 
 const rootElement = document.getElementById("root")
 

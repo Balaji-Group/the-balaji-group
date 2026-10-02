@@ -3,7 +3,7 @@ import { withBase } from '@/lib/utils';
 const clients = [
   ...Array.from({ length: 13 }, (_, index) => ({
     src: withBase(`/Clients/${index + 1}.png`),
-    alt: '',
+    alt: `Client partner ${index + 1}`,
   })),
   { src: withBase('/Clients/14.png'), alt: 'Parle' },
   { src: withBase('/Clients/15.png'), alt: 'Baidyanath' },

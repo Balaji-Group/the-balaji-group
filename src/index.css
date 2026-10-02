@@ -5,28 +5,29 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 218 27% 15%;
-    --off-white-foreground: 218 13% 40%;
-    --primary: 218 48% 17%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 222 78% 49%;
-    --secondary-foreground: 0 0% 100%;
-    --accent: 354 75% 48%;
+    /* Husky Cardboard & Kraft Paper Factory Palette */
+    --background: 37 32% 93%;
+    --foreground: 25 36% 16%;
+    --off-white-foreground: 28 22% 32%;
+    --primary: 25 42% 18%;
+    --primary-foreground: 38 30% 96%;
+    --secondary: 32 52% 42%;
+    --secondary-foreground: 38 30% 97%;
+    --accent: 4 76% 46%;
     --accent-foreground: 0 0% 100%;
-    --danger: 354 75% 48%;
+    --danger: 4 76% 46%;
     --danger-foreground: 0 0% 100%;
-    --card: 210 24% 98%;
-    --card-foreground: 218 27% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 218 27% 15%;
-    --muted: 210 20% 95%;
-    --muted-foreground: 218 12% 42%;
-    --border: 214 20% 87%;
-    --input: 214 20% 87%;
-    --ring: 222 78% 49%;
+    --card: 38 35% 96%;
+    --card-foreground: 25 36% 16%;
+    --popover: 38 35% 96%;
+    --popover-foreground: 25 36% 16%;
+    --muted: 36 28% 87%;
+    --muted-foreground: 26 20% 38%;
+    --border: 34 26% 78%;
+    --input: 34 26% 84%;
+    --ring: 32 52% 42%;
     --radius: 0.5rem;
-    --shadow: 0 12px 32px rgba(20, 34, 56, 0.08);
+    --shadow: 0 12px 32px rgba(45, 30, 16, 0.08);
   }
 }
 

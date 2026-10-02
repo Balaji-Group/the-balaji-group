@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { withBase } from '@/lib/utils';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="site-brand footer-brand">
-              <span className="brand-mark" aria-hidden="true">B</span>
+              <img className="brand-mark" src={withBase('/brand-mark.svg')} alt="" />
               <span className="site-brand-copy">
                 <span className="site-brand-name">The Balaji Group</span>
                 <span className="site-brand-caption">Packaging since 2002</span>

@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ArrowUpRight, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { withBase } from '@/lib/utils';
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -21,7 +22,7 @@ const Header = () => {
     <header className="site-header">
       <div className="site-header-inner">
         <Link to="/" className="site-brand" aria-label="The Balaji Group home">
-          <span className="brand-mark" aria-hidden="true">B</span>
+          <img className="brand-mark" src={withBase('/brand-mark.svg')} alt="" />
           <span className="site-brand-copy">
             <span className="site-brand-name">The Balaji Group</span>
             <span className="site-brand-caption">Packaging since 2002</span>
