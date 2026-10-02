@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+# The Balaji Group
 
-## Project info
+The Balaji Group website is built with React, TypeScript, and Vite.
 
-**URL**: https://lovable.dev/projects/ddba956c-fa40-4375-8699-3bb989268ad2
+## Local development
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddba956c-fa40-4375-8699-3bb989268ad2) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Requirements: Node.js 20 and npm.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm ci
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Checks
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm test
+npm run typecheck
+npm run lint
+npm run build
+```
 
-**Use GitHub Codespaces**
+GitHub Actions runs these checks on pushes and pull requests targeting `main`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Production deployment
 
-## What technologies are used for this project?
+Pushes to `main` deploy the validated `dist/` build to the IIS site using FTPS. The host must have FTPS enabled; plaintext FTP is intentionally not used. Configure the repository variable `IIS_FTPS_ENABLED` as `true` and add these repository actions secrets:
 
-This project is built with:
+- `FTP_SERVER`: the FTP hostname
+- `FTP_USERNAME`: the deployment account
+- `FTP_PASSWORD`: the deployment password
+- `FTP_SERVER_DIR`: the website's publish directory, including its trailing slash
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddba956c-fa40-4375-8699-3bb989268ad2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Until FTPS is enabled and these settings are configured, CI still runs but the deploy job is skipped.

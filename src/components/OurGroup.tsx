@@ -50,31 +50,31 @@ const OurGroup = () => {
   const teamMembers = [{
     name: "DINESH GUPTA",
     position: "PARTNER: SHRI BALAJI PACKAGING",
-    image: withBase('/lovable-uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png'),
+    image: withBase('/uploads/f8765c98-74de-4cd5-874a-93ba8d1ccdd3.png'),
     joinYear: "2011",
     description: "Since becoming a partner in 2011, I have dedicated my efforts to enhancing the efficiency of our system. I firmly believe that with a robust system in place, we can excel at any given stage."
   }, {
     name: "VIVEK AGARWAL",
     position: "PARTNER: SHRI BALAJI PACKAGING",
-    image: withBase('/lovable-uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
+    image: withBase('/uploads/bd704adf-2067-49fc-8b79-f367bde4b264.png'),
     joinYear: "2017",
     description: "I became a partner in 2017. I am convinced that our distinction lies in our quality and resilience to tailor our designs precisely to meet every customer's needs."
   }, {
     name: "SHASWAT KAMALIA",
     position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
-    image: withBase('/lovable-uploads/shaswat-kamalia.jpg'),
+    image: withBase('/uploads/shaswat-kamalia.jpg'),
     joinYear: "2024",
     description: "As a young director in the packaging world, I'm focused on bringing fresh energy and practical ideas to make a real difference."
   }, {
     name: "SUBHASH KR BOOBNA",
     position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
-    image: withBase('/lovable-uploads/subhash-kr-boobna.jpg'),
+    image: withBase('/uploads/subhash-kr-boobna.jpg'),
     joinYear: "2024",
     description: "As a director, I am committed to building strong operational foundations and fostering relationships that drive sustainable growth for our company and partners."
   }, {
     name: "ASHISH BOOBNA",
     position: "DIRECTOR: GANPATI COROPLAST PVT. LTD.",
-    image: withBase('/lovable-uploads/ashish-boobna.jpg'),
+    image: withBase('/uploads/ashish-boobna.jpg'),
     joinYear: "2024",
     description: "In the competitive packaging industry, I believe success comes from adapting to market demands while maintaining unwavering commitment to quality and customer satisfaction at every step."
   }];

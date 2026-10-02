@@ -63,7 +63,7 @@ const About = () => {
               <div className="relative z-10">
                 <div className="w-56 h-56 mx-auto mb-8 rounded-3xl overflow-hidden shadow-large">
                   <img
-                    src={withBase('/lovable-uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png')}
+                    src={withBase('/uploads/55e7530b-dab7-42ec-a814-8a4ff7b4cb6a.png')}
                     alt="Sumit Goel - Founding Director"
                     className="w-full h-full object-cover"
                   />
